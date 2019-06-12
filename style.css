@@ -510,7 +510,7 @@ a:hover, a:active {
 
 .homepage-info-section .entry-title { 
     font-family: 'Work Sans';  
-    margin-top: 70px;
+    margin-top: 175px;
     font-size: 72px;
     font-weight: bold;
     line-height: 1;
@@ -520,13 +520,13 @@ a:hover, a:active {
 @media screen and (max-width: 630px) and (min-width: 450px){
 .homepage-info-section .entry-title { 
     font-family: 'Work Sans';  
-    margin-top: 60px;
+    margin-top: 120px;
     font-size: 60px;
     font-weight: bold;
     line-height: 1;
     color: #132D46;
 }
-.homepage-info-section .entry-subtitle {
+.homepage-info-section .entry-subtitle p{
     font-family: 'lora';
     font-size: 21px;
     font-weight: bold;
@@ -539,13 +539,15 @@ a:hover, a:active {
 @media screen and (max-width: 450px) and (min-width: 320px){
 .homepage-info-section .entry-title { 
     font-family: 'Work Sans';  
-    margin-top: 60px;
+    margin-top: 90px;
     font-size: 45px;
     font-weight: bold;
     line-height: 1;
     color: #132D46;
 }
-.homepage-info-section .entry-subtitle {
+
+
+.homepage-info-section .entry-subtitle p{
     font-family: 'lora';
     font-size: 20px;
     font-weight: bold;
@@ -554,6 +556,29 @@ a:hover, a:active {
 }
 
 } 
+
+@media screen and (max-width: 320px) and (min-width: 220px){
+.homepage-info-section .entry-title { 
+    font-family: 'Work Sans';  
+    margin-top: 90px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1;
+    color: #132D46;
+}
+
+
+.homepage-info-section .entry-subtitle p{
+    font-family: 'Lora';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: #132D46;
+}
+
+} 
+
+
 
 .homepage-info-section .container-fluid {
     max-width: 85%;
@@ -613,7 +638,7 @@ a:hover, a:active {
     height: auto;
     padding: 110px 0 150px;
     background: url("bg-img/bg/Group\ 35.svg") no-repeat;
-    /*background-size: cover !important;*/
+    background-size: cover !important;
 }
 .homepage-featured-events .event-content-wrap {
     position: relative;
@@ -2359,7 +2384,7 @@ align-items: center; }
 .featured-event {
     background-color: rgba(204, 220, 242, 0.04);
     border-radius: 12px; 
-    max-width: 300px;
+    max-width: 220px;
    /* min-width: 140px;*/ 
     display: block;
     margin-left: auto;
@@ -2494,4 +2519,5 @@ align-items: center; }
 
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal.png') no-repeat;
+    background-size: 100%;
 }
