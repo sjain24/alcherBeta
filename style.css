@@ -2524,3 +2524,15 @@ align-items: center; }
 .important-dates-text{
     color:rgba(19, 45, 70, 1);
 }
+
+.events-background{
+    background-color: rgba(16, 26, 65, 0.17);
+    box-shadow: 0px 3px 6px rgba(23, 34, 77, 0.37);
+}
+
+.events-workshop-text{
+    font-family:"Work Sans";
+    font-weight:lighter;
+    color:rgba(16, 26, 65, 1);
+    font-size:18px;
+}
