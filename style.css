@@ -127,18 +127,21 @@ a:hover, a:active {
 
 .site-header .site-title img {
     max-height: 64px;
+    max-width: 154px;
 }
 
 /*
 # Header Bar
 --------------------------------*/
 .header-bar {
+    font-family: 'Work Sans', sans-serif;
+    background: #122a4d;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
-    padding: 14px 0;
+    padding: 25px 0;
 }
 
 /*
@@ -165,10 +168,10 @@ a:hover, a:active {
 .hamburger-menu {
     position: relative;
     width: 100%;
-    max-width: 24px;
+    max-width: 30px;
     height: 22px;
     margin-left: auto;
-    transition: .5s ease-in-out;
+    transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
 }
 
@@ -229,6 +232,7 @@ a:hover, a:active {
     height: 22px;
     overflow: hidden;
     list-style: none;
+    padding-left: 48px;
     transition: all .35s;
 }
 
@@ -242,12 +246,11 @@ a:hover, a:active {
     left: -320px;
     z-index: 9999;
     width: 320px;
-    max-width: 80%;
     height: 100vh;
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #9a28d7;
+    background:#17224d;
     transition: all 0.35s;
 }
 
@@ -277,6 +280,7 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 992px) {
+    /* for desktop */
     .site-navigation {
         position: relative;
         top: auto;
@@ -303,6 +307,8 @@ a:hover, a:active {
     .site-navigation ul li a {
         color: #fff;
     }
+
+    
 }
 
 /*
@@ -310,13 +316,18 @@ a:hover, a:active {
 --------------------------------*/
 .site-header .buy-tickets {
     margin-right: 45px;
-    text-align: right;
+    text-align: center;
+    color: #101A41;
+}
+.site-header .buy-tickets a:visited{
+    color:#101A41;
 }
 
 .site-header .buy-tickets .btn,
 .hero-slider .btn {
     padding: 16px 46px;
-    border: 2px solid #fff;
+    background: #70DEF1;  
+    border: 0px;  
 }
 
 /*--------------------------------------------------------------
@@ -520,8 +531,8 @@ a:hover, a:active {
     max-width: 100%;
 }
 
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 175px;
     font-size: 72px;
     font-weight: bold;
@@ -530,8 +541,8 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 630px) and (min-width: 450px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 120px;
     font-size: 60px;
     font-weight: bold;
@@ -546,11 +557,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 @media screen and (max-width: 450px) and (min-width: 320px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 90px;
     font-size: 45px;
     font-weight: bold;
@@ -567,11 +578,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 @media screen and (max-width: 320px) and (min-width: 220px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 90px;
     font-size: 35px;
     font-weight: bold;
@@ -588,7 +599,7 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 
 
@@ -607,12 +618,12 @@ a:hover, a:active {
 
 .homepage-info-section .entry-content {
     margin-top: 30px;
-    
+
 
 }
 
 
- 
+
 .homepage-info-section .entry-content p {
     font-family: 'lora';
     font-size: 18px;
@@ -880,7 +891,7 @@ a:hover, a:active {
     margin-bottom: 20px;
     color: #CCDCF2;
     margin-left: 10px;
-    /*text-align: center !important;*/ 
+    /*text-align: center !important;*/
 }
 
 .next-events-section-header .entry-title,
@@ -890,8 +901,8 @@ a:hover, a:active {
     font-size: 48px;
     font-weight: lighter;
     line-height: 1;
-    
-    
+
+
 }
 
 @media screen and (max-width: 470px){
@@ -903,7 +914,7 @@ a:hover, a:active {
     font-weight: lighter;
     line-height: 1;
     text-align: center;
-    
+
 }
 }
 
@@ -915,12 +926,12 @@ a:hover, a:active {
 }*/
 
 .homepage-next-events{
-    
+
     /*background: url("bg-img/bg/Group\ 34.svg") no-repeat;
     background-color:#70DEF1;*/
     /* text-align: center; */
 
-    
+
     /*background: url("bg-img/bg/Group\ 34.svg") cover, ;*/
     background: url("bg-img/bg/Group\ 34(1).svg");
     background-color: #70DEF1;
@@ -2350,7 +2361,7 @@ align-items: center; }
     -ms-flex: 0 0 110px;
     flex: 0 0 110px;
     /*max-width: 90px;*/
-    width: 110px; 
+    width: 110px;
     padding-right: 0px; }
 
     .single-cool-fact .scf-icon img {
@@ -2358,9 +2369,9 @@ align-items: center; }
         width: 90px;
         height: 90px;
     }
-    
+
   .single-cool-fact .scf-text h2 {
-    
+
     font-size: 60px;
     margin-bottom: 0;
     font-weight: bold;
@@ -2407,12 +2418,12 @@ align-items: center; }
 
 .featured-event {
     background-color: rgba(204, 220, 242, 0.04);
-    border-radius: 12px; 
+    border-radius: 12px;
     max-width: 220px;
-   /* min-width: 140px;*/ 
+   /* min-width: 140px;*/
     display: block;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 }
 
 .featured-event-title {
@@ -2464,15 +2475,15 @@ align-items: center; }
 }
 
 .next-events-section-header-ages .entry-title {
-    
+
     padding: 24px 0;
     font-size: 48px;
     color: #CCDCF2;
     font-weight: lighter;
     line-height: 1;
     padding-bottom: 60px;
-    
-    
+
+
 }
 .next-events-section-header-ages .entry-subtitle-ages {
     font-family: 'Lora';
@@ -2543,7 +2554,7 @@ align-items: center; }
     color: #FFFFFF;
     font-weight: lighter;
     margin-left: 0px;
-   
+
 }
 }
 
@@ -2572,30 +2583,32 @@ align-items: center; }
     font-weight:lighter;
     color:rgba(16, 26, 65, 1);
     font-size:18px;
+}
+
 
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-    background-size: 100%;
-    /*background-position: right top;
-    background-size: contain;*/
+    background-size: cover;
+    width: 100%;
+    background-position: top(120%) right;
+    
 }
 
 
 .entry-alcher-logo {
-    
-    width:380px;
-    
+    max-width:250px;
 }
 
 .entry-button{
     font-size: 20px;
     font-family: 'Work Sans';
     color: #101A41;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     background-color: #9CF1EB;
     border-width: 0px;
     border-radius: 44px;
-    width: 336px;
+    width: 100%;
+    max-width: 350px;
     height: 56px;
 }
 
@@ -2649,7 +2662,7 @@ align-items: center; }
     font-size: 24px;
     font-family: 'Work Sans';
     font-weight: lighter;
-    
+
 }
 
 
@@ -2678,7 +2691,7 @@ align-items: center; }
   width: 20px;
   margin-left: 15px;
     margin-right: 15px;
-  
+
 }
 
 .dot-small {
@@ -2690,9 +2703,9 @@ align-items: center; }
 }
 
 .single-dot p{
-    
+
     font-size: 20px;
-    
+
 }
 }
 
@@ -2704,7 +2717,7 @@ align-items: center; }
 
   margin-left: 18px;
     margin-right: 18px;
-  
+
 }
 
 .dot-small {
@@ -2721,7 +2734,7 @@ align-items: center; }
 }
 
 .single-dot p{
-    
+
     font-size: 16px;
 }
 }
@@ -2735,7 +2748,7 @@ align-items: center; }
 
   margin-left: 10px;
     margin-right: 10px;
-  
+
 }
 
 .dot-small {
@@ -2752,7 +2765,7 @@ align-items: center; }
 }
 
 .single-dot p{
-    
+
     font-size: 16px;
 }
 }
@@ -2767,7 +2780,7 @@ align-items: center; }
 
   margin-left: 10px;
     margin-right: 10px;
-  
+
 }
 
 .dot-small {
@@ -2788,7 +2801,7 @@ align-items: center; }
 
 }
 .single-dot p{
-    
+
     font-size: 13px;
 }
 }
@@ -2801,7 +2814,7 @@ align-items: center; }
 
   margin-left: 6px;
     margin-right: 6px;
-  
+
 }
 
 .dot-small {
@@ -2822,7 +2835,7 @@ align-items: center; }
 
 }
 .single-dot p{
-    
+
     font-size: 11.5px;
 }
 }
