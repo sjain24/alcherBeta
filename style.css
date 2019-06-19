@@ -2236,50 +2236,152 @@ ul.tabs-nav .tab-nav.active {
 }
 
 /*--------------------------------------------------------------
-# Site Footer
+# Site Footer line 2239 to line 2383
 --------------------------------------------------------------*/
 .site-footer {
-    padding: 75px 0;
+    padding: 200px 0px 0px 0px;
      background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+     background-size: cover;
     background-color: #70DEF1;
     text-align: center;
 }
 
+.footer-logo {
+    
+    text-align: left;
+    height: 60px;
+}
 .footer-logo img {
+    height: 100%;
     max-width: 100%;
 }
 
-.footer-navigation ul,
+
+
+.footer-heading h3{
+    font-size: 38px;
+    color: #FFFFFF;
+    font-family: "Work Sans";
+    font-weight: normal;
+}
+
+.footer-contact-info{
+    text-align: right;
+}
+
 .footer-social ul {
     padding: 0;
-    margin: 32px 0 0;
+    margin-top: 45px;
     list-style: none;
+    
+}
+.footer-social-two ul {
+    padding: 0;
+    margin-top: 45px;
+    list-style: none;
+    
 }
 
-.footer-navigation li {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+.footer-social-two li{
+    display: none;
 }
 
-.footer-navigation li a {
+.social-icons-list li{
+    margin-right: 33px;
+}
+
+.footer-copyright{
+    font-size: 14px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 992px){
+    .footer-contact-info{
+    text-align: left;
+}
+.footer-logo {
+    
+    text-align: center;
+    margin-bottom: 90px;
+    
+}
+
+.footer-social  li {
+   
+   display: none;
+    
+    
+}
+
+.footer-social-two li{
     display: block;
-    padding: 8px 12px;
-    color: #fff;
 }
 
-.footer-social li a {
-    display: block;
-    width: 16px;
-    height: 22px;
-    margin: 12px;
-    color: #8f8f8f;
-    transition: all .35s;
+.footer-heading h3{
+    font-size: 28px;
+    
 }
+.footer-copyright{
+    
+    margin-top: 30px;
+}
+}
+
+.footer-contact-info .footer-info {
+    margin-top: 30px;
+}
+
+
+
+.iname-info {
+    font-size: 20px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+}
+
+
+
+
+.icon-facebook{
+    color:#3b5998;
+
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-googleplus{
+    color:#DD4B39;
+}
+
+
+.fa-stack{
+    font-size: 26px;
+}
+
+.fa-stack-1x{
+    color: #9CF1EB;
+    font-size: 20px;
+}
+
+
+
+
 
 .footer-social li a:hover {
     color: #fff;
 }
+
+
+/*--------------------------------------------------------------
+# Footer - finish
+--------------------------------------------------------------*/
+
 
 .back-to-top {
     position: fixed;
