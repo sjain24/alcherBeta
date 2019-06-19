@@ -126,7 +126,7 @@ a:hover, a:active {
 }
 
 .site-header .site-title img {
-    max-height: 64px;
+    max-height: auto;
     max-width: 154px;
 }
 
@@ -325,7 +325,7 @@ a:hover, a:active {
 
 .site-header .buy-tickets .btn,
 .hero-slider .btn {
-    padding: 16px 46px;
+    padding: 15px 25px;
     background: #70DEF1;  
     border: 0px;  
 }
@@ -337,8 +337,8 @@ a:hover, a:active {
 }
 
 .hero-content {
-    padding-top: 150px;
-    padding-bottom: 120px;
+    padding-top: 175px;
+    padding-bottom: 135px;
 }
 
 .hero-content .container,
@@ -355,7 +355,9 @@ a:hover, a:active {
 }
 
 .hero-slider .btn {
-    margin-top: 45px;
+    margin-top: 20px;
+    width: 75%;
+    max-width: 300px;
 }
 
 .swiper-container-horizontal >.swiper-pagination-bullets,
@@ -2619,9 +2621,9 @@ align-items: center; }
     padding-bottom: 60px;
 }
 
-    .entry-footer{
-        padding-top: 101px;
-    }
+.entry-footer{
+    padding-top: 0px;
+}
 
 
 .featured-events-div {
@@ -2846,3 +2848,28 @@ align-items: center; }
     padding-bottom: 85px;
 
 }
+
+/* main-header */
+.main-header{
+    height: 750px;
+}
+
+.img .alcher-logo{
+    max-width:50px;
+}
+
+
+.custom-padding{
+        /* position: relative; */
+        align-content: center;
+        padding-left: 45px;
+}
+
+@media screen and (min-width: 992px) {
+    .custom-padding{
+        padding-left: 125px;
+        /* align-content: left; */
+    }
+}
+
+
