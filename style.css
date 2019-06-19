@@ -2590,10 +2590,18 @@ align-items: center; }
 
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-    background-size: cover;
+    background-size: 100%;
     width: 100%;
-    background-position: top(120%) right;
-    
+    background-position: top(200%) right;
+}
+
+@media only screen and (max-width: 1320px){
+    .first-and-second {
+        background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
+        background-size:auto auto;
+        width: 100%;
+        /* background-position: center right; */
+    }
 }
 
 
@@ -2873,3 +2881,195 @@ align-items: center; }
 }
 
 
+
+/* *********************************** */
+/* styles to initatives.htmnl */
+
+.single-tab button {
+    height: 180px;
+    width: 180px;
+    border-width: 0px;
+    border-radius: 9px;
+    background-color: rgba(16, 26, 65, 0.17) ;
+    background-image: url('bg-img/Mask Group 5.svg');
+    background-position: center; 
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+    /*rgba(16, 26, 65, 1)*/
+      
+}
+
+
+
+.single-tab button:hover {
+    
+    background-color: rgba(16, 26, 65, 0.33) ;
+    
+}
+
+.single-tab button.active {
+    
+    background-color: rgba(16, 26, 65, 1) ;
+    
+}
+
+
+
+.single-tab {
+    display: inline-block;
+    padding-left: 17px;
+    padding-right: 17px;
+
+}
+
+@media only screen and (max-width: 800px){
+.single-tab button {
+    height: 100px;
+    width: 100px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(16, 26, 65, 0.17) ;
+    background-image: url('bg-img/Mask Group 5.svg');
+    background-position: center; 
+    background-size: 92% 92%;
+    background-repeat: no-repeat;
+    
+      
+}
+.single-tab {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+}
+
+
+.tabs-navigation {
+    /*overflow:auto;*/
+    text-align: center;
+}
+
+.single-tab #nE-Unveiled{
+    
+    background-image: url('bg-img/Mask Group 4.svg');
+    
+      
+}
+
+.single-tab #udaan{
+
+    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+
+}
+
+
+.single-tab #jeeAdvanced{
+
+    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+    
+}
+
+
+.single-tab #bloodDonate{
+
+    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+    
+}
+.tabcontent {
+    display: none;
+}
+
+.tabcontentdefault{
+    display: block;
+}
+
+.tabcontent h3 {
+    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 54px;
+}
+
+
+
+.tabcontent p {
+    font-family: "Lora";
+    text-align: left;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.tabs-navigation {
+    margin-top: 300px;
+    margin-bottom: 80px;
+}
+
+
+
+.featured-event {
+    background-color: rgba(16, 26, 65, 0.17) ;
+    border-radius: 10px; 
+    max-width: 220px;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.featured-event-title {
+
+    color: #1D324D;
+    font-size: 18px;
+    font-family: 'Work Sans';
+    font-weight: lighter;
+    text-align: center;
+
+
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.featured-event-img {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 240px;
+    max-height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-events-deck{
+    text-align: center !important;
+    display: inline-block;
+}
+
+
+.card-deck-heading h3{
+    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+
+@media only screen and (max-width: 420px){
+    .card-deck-heading h3 {
+        font-family: "Work Sans";
+        font-weight: lighter;
+        font-size: 40px;
+        margin-bottom: 54px;
+    }  
+}
+
+/* styles to initiative.html ends here */
