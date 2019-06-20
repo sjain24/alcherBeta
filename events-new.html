@@ -24,13 +24,15 @@
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/events.js"></script>
 </head>
-<body>
+<body onload="hideRules(); hideSubModules();">
 <header class="site-header">
     <div class="header-bar">
         <div class="container-fluid">
@@ -172,74 +174,648 @@
     
    
     <div class="card-deck">
-  <div class="card events-background"><img src="./images/Group 135@2x.png" style="width:100%" class="card-img-top">
+  <div class="card events-background modules" onclick="openModules(event,'LITERARY'); hideRules();" ><img src="./images/Group 135@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">LITERARY</p>
     </div>
   </div>
-  <div class="card events-background"><img src="./images/Group 135.svg" style="width:100%" class="card-img-top">
+  <div class="card events-background modules" onclick="openModules(event,'LCA'); hideRules();"><img src="./images/Group 135.svg" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">LIGHTS CAMERA ACTION</p>
     </div>
   </div>
-    <div class="card events-background"><img src="./images/Group 137@2x.png" style="width:100%" class="card-img-top">
+    <div class="card events-background modules " onclick="openModules(event,'SPORTS'); hideRules();"><img src="./images/Group 137@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">SPORTS</p>
     </div>
   </div>
-    <div class="card events-background"><img src="./images/Group 138@2x.png" style="width:100%" class="card-img-top">
+    <div class="card events-background modules" onclick="openModules(event,'MUSIC'); hideRules();"><img src="./images/Group 138@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">MUSIC</p>
     </div>
   </div>
-    <div class="card events-background"><img src="./images/Group 141@2x.png" style="width:100%" class="card-img-top">
+    <div class="card events-background modules" onclick="openModules(event,'DANCE'); hideRules();"><img src="./images/Group 141@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">DANCE</p>
     </div>
   </div>
-     
-</div><div class="card-deck" style="
+</div>
+
+    
+  <div class="card-deck subModule" style="
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+" id="LITERARY">
+  <div class="card events-background events" onclick="openEvent(event,'JAM')">
+    <div class="card-body" >
+      <p class="card-text events-workshop-text text" style="
+    padding-top: 15px;
+">JAM</p>
+    </div>
+    </div>
+  <div class="card events-background events" onclick="openEvent(event,'MEA')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">MEHFIL-E-ALCHERINGA</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'PD')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">PARLIAMENTARY DEBATE</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events " onclick="openEvent(event,'PS')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text" style="
+    padding-top: 15px;
+">POETRY SLAM</p>
+    </div>
+    </div>
+    
+</div>
+
+<div class="eventContent" id="JAM">
+    <p style="text-align: left; font-family: 'Lora';">
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="MEA">
+    <p style="text-align: left; font-family: 'Lora';">
+    MEA</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="PD">
+    <p style="text-align: left; font-family: 'Lora';">
+    PD </br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="PS">
+    <p style="text-align: left; font-family: 'Lora';">
+    PS</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+<div class="card-deck subModule" style="
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+" id="LCA">
+  <div class="card events-background events" onclick="openEvent(event,'LCA1')">
+    <div class="card-body" >
+      <p class="card-text events-workshop-text text" style="
+    padding-top: 15px;
+">EVENT 1 LCA</p>
+    </div>
+    </div>
+  <div class="card events-background events" onclick="openEvent(event,'LCA2')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 2 LCA</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'LCA3')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 3 LCA</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'LCA4')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text" style="
+    padding-top: 15px;
+">EVENT 4 LCA</p>
+    </div>
+    </div>
+    
+</div>
+
+<div class="eventContent" id="LCA1">
+    <p style="text-align: left; font-family: 'Lora';">
+        LCA1</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="LCA2">
+    <p style="text-align: left; font-family: 'Lora';">
+    LCA2</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="LCA3">
+    <p style="text-align: left; font-family: 'Lora';">
+    LCA3 </br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="LCA4">
+    <p style="text-align: left; font-family: 'Lora';">
+    LCA4</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+
+<div class="card-deck subModule" style="
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+" id="SPORTS">
+  <div class="card events-background events" onclick="openEvent(event,'SPORTS1')">
+    <div class="card-body" >
+      <p class="card-text events-workshop-text text" style="
+    padding-top: 15px;
+">EVENT 1 SPORTS</p>
+    </div>
+    </div>
+  <div class="card events-background events" onclick="openEvent(event,'SPORTS2')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 2 SPORTS</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'SPORTS3')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 3 SPORTS</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'SPORTS4')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text" style="
+    padding-top: 15px;
+">EVENT 4 SPORTS</p>
+    </div>
+    </div>
+    
+</div>
+
+<div class="eventContent" id="SPORTS1">
+    <p style="text-align: left; font-family: 'Lora';">
+        SPORTS1</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="SPORTS2">
+    <p style="text-align: left; font-family: 'Lora';">
+    SPORTS2</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="SPORTS3">
+    <p style="text-align: left; font-family: 'Lora';">
+    SPORTS3 </br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="SPORTS4">
+    <p style="text-align: left; font-family: 'Lora';">
+    SPORTS4</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="card-deck subModule" style="
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+" id="MUSIC">
+  <div class="card events-background events" onclick="openEvent(event,'MUSIC1')">
+    <div class="card-body" >
+      <p class="card-text events-workshop-text text" style="
+    padding-top: 15px;
+">EVENT 1 MUSIC</p>
+    </div>
+    </div>
+  <div class="card events-background events" onclick="openEvent(event,'MUSIC2')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 2 MUSIC</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'MUSIC3')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 3 MUSIC</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'MUSIC4')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text" style="
+    padding-top: 15px;
+">EVENT 4 MUSIC</p>
+    </div>
+    </div>
+    
+</div>
+
+
+<div class="eventContent" id="MUSIC1">
+    <p style="text-align: left; font-family: 'Lora';">
+        MUSIC1</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="MUSIC2">
+    <p style="text-align: left; font-family: 'Lora';">
+    MUSIC2</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="MUSIC3">
+    <p style="text-align: left; font-family: 'Lora';">
+    MUSIC3 </br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="MUSIC4">
+    <p style="text-align: left; font-family: 'Lora';">
+    MUSIC4</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+
+
+<div class="card-deck subModule" style="
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+" id="DANCE">
+  <div class="card events-background events" onclick="openEvent(event,'DANCE1')">
+    <div class="card-body" >
+      <p class="card-text events-workshop-text text" style="
+    padding-top: 15px;
+">EVENT 1 DANCE</p>
+    </div>
+    </div>
+  <div class="card events-background events" onclick="openEvent(event,'DANCE2')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 2 DANCE</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'DANCE3')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text">EVENT 3 DANCE</p>
+    </div>
+    </div>
+    
+    <div class="card events-background events" onclick="openEvent(event,'DANCE4')">
+    <div class="card-body">
+      <p class="card-text events-workshop-text" style="
+    padding-top: 15px;
+">EVENT 4 DANCE</p>
+    </div>
+    </div>
+    
+</div>
+
+<div class="eventContent" id="DANCE1">
+    <p style="text-align: left; font-family: 'Lora';">
+        DANCE1</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="DANCE2">
+    <p style="text-align: left; font-family: 'Lora';">
+    DANCE2</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="DANCE3">
+    <p style="text-align: left; font-family: 'Lora';">
+    DANCE3 </br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="eventContent" id="DANCE4">
+    <p style="text-align: left; font-family: 'Lora';">
+    DANCE4</br>
+        Just A Minute: “Talking for 60 sec doesn’t sound like a difficult task , does it? Well think again”. JAM is a extempore event wherein your fluency in spoken English will be put to test. Preliminary round is a written round wherein you are required to ask the questions that test your ingenuity and how well can you get around the situation. There will be multiple rounds where you need to speak flawlessly and leave the floor to interjecting participants.
+    </p>
+
+    <h2 style="text-align: left; font-weight: bolder; font-family: 'Work Sans'; ">Rules</h2>
+
+    <ol style="text-align: left; font-family: 'Lora'; padding-left: 17px;">
+        <li>     The first person to JAM gets to speak.</li>
+        <li>     You get points for each second you speak. </li>
+        <li>     You get points for each correct interjection you make. </li> 
+        <li>     You are supposed to speak fluently without any hesitation, stuttering, lisp, grammatical errors or incoherence. At any such interjection any participant can JAM and start speaking.</li>
+    </ol>
+
+    <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Work Sans';
+    border: none; background-color: rgba(16, 26, 65, 0.17)">REGISTER</button>
+
+</div>
+
+<div class="card-deck" style="
     margin-top: 40px;
 ">
-  <div class="card events-background"><img src="./images/Group 140@2x.png" style="width:100%" class="card-img-top">
+  <div class="card events-background modules"><img src="./images/Group 140@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">STAGE CRAFT</p>
     </div>
   </div>
-  <div class="card events-background"><img src="./images/Group 139.svg" style="width:100%" class="card-img-top">
+  <div class="card events-background modules"><img src="./images/Group 139.svg" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">VOGUE NATION</p>
     </div>
   </div>
-    <div class="card events-background"><img src="./images/Group 137@2x.png" style="width:100%" class="card-img-top">
+    <div class="card events-background modules"><img src="./images/Group 137@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">CLASS APART</p>
     </div>
   </div>
-    <div class="card events-background"><img src="./images/Group 138@2x.png" style="width:100%" class="card-img-top">
+    <div class="card events-background modules"><img src="./images/Group 138@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
 ">ART TALKIES</p>
     </div>
   </div>
-    <div class="card events-background"><img src="./images/Group 141@2x.png" style="width:100%" class="card-img-top">
+    <div class="card events-background modules"><img src="./images/Group 141@2x.png" style="width:100%" class="card-img-top">
     
     <div class="card-title text-center ">
       <p class="card-text events-workshop-text" style="
@@ -380,7 +956,8 @@
     width: 100%;
 ">
                 <h2 class="entry-title" style="
-    COLOR: rgba(204, 220, 242, 1);
+    color: rgba(204, 220, 242, 1);
+    margin-top: 70px;
 ">PRONITES</h2>
                 <!-- <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia.</p> -->
             </div>
@@ -460,7 +1037,7 @@
             </div>
         </div> -->
 
-<div class="card-deck featured-events-deck">
+<div class="card-deck featured-events-deck" style="padding: 70px; padding-top: 0px;">
   <div class="card featured-event" style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);">
     
     <div class="card-body" style="
