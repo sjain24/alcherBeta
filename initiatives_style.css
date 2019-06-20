@@ -2603,7 +2603,7 @@ align-items: center; }
 
 
 .card-deck-heading h3{
-    font-family: "Work Sans";
+    font-family: "Work Sans"
     font-weight: lighter;
     font-size: 50px;
     margin-bottom: 30px;
@@ -2613,11 +2613,11 @@ align-items: center; }
 
 @media only screen and (max-width: 420px){
     .card-deck-heading h3 {
-        font-family: "Work Sans";
-        font-weight: lighter;
-        font-size: 40px;
-        margin-bottom: 54px;
-    }  
+    font-family: "Work Sans"
+    font-weight: lighter;
+    font-size: 40px;
+    margin-bottom: 54px;
+}
 }
 
 

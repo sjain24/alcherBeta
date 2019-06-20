@@ -20,6 +20,7 @@ overflow-x: hidden;
 
 body {
     color: #2f2f2f;
+    width:100%;
     font-family: 'Calibri';
 }
 
@@ -1027,7 +1028,7 @@ a:hover, a:active {
 # Homepage - Regional Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    min-height: 1500px;
+    /* min-height: 1500px; */
     padding-top: 280px;
     background: url("bg-img/bg/Group\ 49.svg");
     background-color: #17224D;
@@ -2270,50 +2271,153 @@ ul.tabs-nav .tab-nav.active {
 }
 
 /*--------------------------------------------------------------
-# Site Footer
+# Site Footer line 2239 to line 2383
 --------------------------------------------------------------*/
 .site-footer {
-    padding: 75px 0;
-     background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    
+    padding: 200px 0px 0px 0px;
+    background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    background-size: cover;
     background-color: #70DEF1;
     text-align: center;
+    margin-top: 200px;
 }
 
+.footer-logo {
+    
+    text-align: left;
+    height: 60px;
+}
 .footer-logo img {
+    height: 100%;
     max-width: 100%;
 }
 
-.footer-navigation ul,
+
+
+.footer-heading h3{
+    font-size: 38px;
+    color: #FFFFFF;
+    font-family: "Work Sans";
+    font-weight: normal;
+}
+
+.footer-contact-info{
+    text-align: right;
+}
+
 .footer-social ul {
     padding: 0;
-    margin: 32px 0 0;
+    margin-top: 45px;
     list-style: none;
+    
+}
+.footer-social-two ul {
+    margin-top: 25px;
+    list-style: none;
+    
 }
 
-.footer-navigation li {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+.footer-social-two li{
+    display: none;
 }
 
-.footer-navigation li a {
+.social-icons-list li{
+    margin-right: 33px;
+}
+
+.footer-copyright{
+    font-size: 15px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 992px){
+    .footer-contact-info{
+    text-align: left;
+}
+.footer-logo {
+    
+    text-align: center;
+    margin-bottom: 90px;
+    
+}
+
+.footer-social  li {
+   
+   display: none;
+    
+    
+}
+
+.footer-social-two li{
     display: block;
-    padding: 8px 12px;
-    color: #fff;
 }
 
-.footer-social li a {
-    display: block;
-    width: 16px;
-    height: 22px;
-    margin: 12px;
-    color: #8f8f8f;
-    transition: all .35s;
+.footer-heading h3{
+    font-size: 28px;
+    
 }
+.footer-copyright{
+    
+    margin-top: 30px;
+}
+}
+
+.footer-contact-info .footer-info {
+    margin-top: 30px;
+}
+
+
+
+.iname-info {
+    font-size: 20px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+}
+
+
+
+
+.icon-facebook{
+    color:#3b5998;
+
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-googleplus{
+    color:#DD4B39;
+}
+
+
+.fa-stack{
+    font-size: 26px;
+}
+
+.fa-stack-1x{
+    color: #9CF1EB;
+    font-size: 20px;
+}
+
+
+
+
 
 .footer-social li a:hover {
     color: #fff;
 }
+
+
+/*--------------------------------------------------------------
+# Footer - finish
+--------------------------------------------------------------*/
 
 .back-to-top {
     position: fixed;
@@ -3007,53 +3111,6 @@ align-items: center; }
     margin-bottom: 80px;
 }
 
-
-
-.featured-event {
-    background-color: rgba(16, 26, 65, 0.17) ;
-    border-radius: 10px; 
-    max-width: 220px;
-   
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-}
-
-.featured-event-title {
-
-    color: #1D324D;
-    font-size: 18px;
-    font-family: 'Work Sans';
-    font-weight: lighter;
-    text-align: center;
-
-
-}
-
-.card-body a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-.featured-event-img {
-    margin-top: 35px;
-    margin-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 240px;
-    max-height: 180px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.featured-events-deck{
-    text-align: center !important;
-    display: inline-block;
-}
-
-
 .card-deck-heading h3{
     font-family: "Work Sans";
     font-weight: lighter;
@@ -3071,5 +3128,12 @@ align-items: center; }
         margin-bottom: 54px;
     }  
 }
+.featured-events-deck{
+    text-align: center !important;
+    display: inline-block;
+}
+
+
+
 
 /* styles to initiative.html ends here */
