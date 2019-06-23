@@ -2239,43 +2239,141 @@ ul.tabs-nav .tab-nav.active {
 # Site Footer
 --------------------------------------------------------------*/
 .site-footer {
-    padding: 75px 0;
-     background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    
+    padding: 200px 0px 0px 0px;
+    background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    background-size: cover;
     background-color: #70DEF1;
     text-align: center;
+    margin-top: 200px;
 }
 
+.footer-logo {
+    
+    text-align: left;
+    height: 60px;
+}
 .footer-logo img {
+    height: 100%;
     max-width: 100%;
 }
 
-.footer-navigation ul,
+
+
+.footer-heading h3{
+    font-size: 38px;
+    color: #FFFFFF;
+    font-family: "Work Sans";
+    font-weight: normal;
+}
+
+.footer-contact-info{
+    text-align: right;
+}
+
 .footer-social ul {
     padding: 0;
-    margin: 32px 0 0;
+    margin-top: 45px;
     list-style: none;
+    
+}
+.footer-social-two ul {
+    margin-top: 25px;
+    list-style: none;
+    
 }
 
-.footer-navigation li {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+.footer-social-two li{
+    display: none;
 }
 
-.footer-navigation li a {
+.social-icons-list li{
+    margin-right: 33px;
+}
+
+.footer-copyright{
+    font-size: 15px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 992px){
+    .footer-contact-info{
+    text-align: left;
+}
+.footer-logo {
+    
+    text-align: center;
+    margin-bottom: 90px;
+    
+}
+
+.footer-social  li {
+   
+   display: none;
+    
+    
+}
+
+.footer-social-two li{
     display: block;
-    padding: 8px 12px;
-    color: #fff;
 }
 
-.footer-social li a {
-    display: block;
-    width: 16px;
-    height: 22px;
-    margin: 12px;
-    color: #8f8f8f;
-    transition: all .35s;
+.footer-heading h3{
+    font-size: 28px;
+    
 }
+.footer-copyright{
+    
+    margin-top: 30px;
+}
+}
+
+.footer-contact-info .footer-info {
+    margin-top: 30px;
+}
+
+
+
+.iname-info {
+    font-size: 20px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+}
+
+
+
+
+.icon-facebook{
+    color:#3b5998;
+
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-googleplus{
+    color:#DD4B39;
+}
+
+
+.fa-stack{
+    font-size: 26px;
+}
+
+.fa-stack-1x{
+    color: #9CF1EB;
+    font-size: 20px;
+}
+
+
+
+
 
 .footer-social li a:hover {
     color: #fff;
@@ -2507,12 +2605,12 @@ align-items: center; }
 
 .single-tab #udaan{
 
-    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+    background-image: url('bg-img/Asset 1.svg'); /*Image Url Here*/
 
 }
 
 
-.single-tab #jeeAdvanced{
+.single-tab #otherinit{
 
     background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
     
@@ -2578,10 +2676,6 @@ align-items: center; }
 
 }
 
-.card-body a:hover {
-    text-decoration: none;
-    color: inherit;
-}
 
 
 .featured-event-img {
@@ -2620,9 +2714,168 @@ align-items: center; }
 }
 }
 
+.initiatives-panels h3{
+    text-align: left;
+    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.initiatives-panels {
+    margin-top: 60px;
+}
+
+
+.card-team{
+    background-color: rgba(16, 26, 65, 0.17);
+    border-radius: 8px;
+    border-width: 0px;
+}
+@media screen and (min-width: 1200px){
+    .card-team{
+    width: 255px;
+}
+}
+
+
+.card-title{
+    font-family: "Work Sans";
+    font-weight: bolder;
+    font-size: 18px;
+    color: #1D324D;
+}
+.card-subtitle{
+    font-family: "Work Sans";
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: -7px;
+    color: #1D324D;
+}
+/*.card-content-team{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}*/
+.card-img-div{
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /*padding-top: 20px; */
+}
+
+
+.card-text{
+    font-family: "Work Sans";
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    color: #1D324D;
+}
 
 
 
+
+
+
+
+
+.footer-social-icons ul {
+    padding: 0;
+    margin-top: 15px;
+    list-style: none;
+    margin-bottom: 0px;
+
+    
+}
+.footer-social-icons .fa-stack{
+    font-size: 14px;
+}
+
+.footer-social-icons .fa-stack-1x{
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-social-icons li{
+    margin-left: 6px;
+    margin-right: 6px;
+
+}
+
+.icon-linkedin{
+    color: #0077B5;
+}
+
+.icon-instagram {
+    color: #C13584;
+
+}
+.icon-facebook{
+    color:#3b5998;
+
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-googleplus{
+    color:#DD4B39;
+}
+
+
+.footer-social .fa-stack{
+    font-size: 26px;
+}
+
+.footer-social .fa-stack-1x{
+    color: #9CF1EB;
+    font-size: 20px;
+}
+
+.card-team{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media screen and (max-width: 1200px){
+
+.card-title{
+    
+    font-weight: bolder;
+    font-size: 26px;
+    
+}
+.card-subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: -7px;
+    
+}
+.card-text{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 30px;
+   
+}
+
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
