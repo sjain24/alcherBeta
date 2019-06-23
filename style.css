@@ -8,8 +8,19 @@
     font-style: normal;
 }
 
+html,body{
+width: 100%;
+height: 100%;
+margin: 0px !important;
+padding: 0px !important;
+overflow-x: hidden;
+/* background-color: #70DEF1; */
+
+}
+
 body {
     color: #2f2f2f;
+    width:100%;
     font-family: 'Calibri';
 }
 
@@ -116,19 +127,22 @@ a:hover, a:active {
 }
 
 .site-header .site-title img {
-    max-height: 64px;
+    max-height: auto;
+    max-width: 154px;
 }
 
 /*
 # Header Bar
 --------------------------------*/
 .header-bar {
+    font-family: 'Work Sans', sans-serif;
+    background: #122a4d;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
-    padding: 14px 0;
+    padding: 25px 0;
 }
 
 /*
@@ -155,10 +169,10 @@ a:hover, a:active {
 .hamburger-menu {
     position: relative;
     width: 100%;
-    max-width: 24px;
+    max-width: 30px;
     height: 22px;
     margin-left: auto;
-    transition: .5s ease-in-out;
+    transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
 }
 
@@ -219,6 +233,7 @@ a:hover, a:active {
     height: 22px;
     overflow: hidden;
     list-style: none;
+    padding-left: 48px;
     transition: all .35s;
 }
 
@@ -232,12 +247,11 @@ a:hover, a:active {
     left: -320px;
     z-index: 9999;
     width: 320px;
-    max-width: 80%;
     height: 100vh;
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #9a28d7;
+    background:#17224d;
     transition: all 0.35s;
 }
 
@@ -267,6 +281,7 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 992px) {
+    /* for desktop */
     .site-navigation {
         position: relative;
         top: auto;
@@ -293,6 +308,8 @@ a:hover, a:active {
     .site-navigation ul li a {
         color: #fff;
     }
+
+    
 }
 
 /*
@@ -300,13 +317,18 @@ a:hover, a:active {
 --------------------------------*/
 .site-header .buy-tickets {
     margin-right: 45px;
-    text-align: right;
+    text-align: center;
+    color: #101A41;
+}
+.site-header .buy-tickets a:visited{
+    color:#101A41;
 }
 
 .site-header .buy-tickets .btn,
 .hero-slider .btn {
-    padding: 16px 46px;
-    border: 2px solid #fff;
+    padding: 15px 25px;
+    background: #70DEF1;  
+    border: 0px;  
 }
 
 /*--------------------------------------------------------------
@@ -316,8 +338,8 @@ a:hover, a:active {
 }
 
 .hero-content {
-    padding-top: 150px;
-    padding-bottom: 120px;
+    padding-top: 175px;
+    padding-bottom: 135px;
 }
 
 .hero-content .container,
@@ -334,7 +356,9 @@ a:hover, a:active {
 }
 
 .hero-slider .btn {
-    margin-top: 45px;
+    margin-top: 20px;
+    width: 75%;
+    max-width: 300px;
 }
 
 .swiper-container-horizontal >.swiper-pagination-bullets,
@@ -510,8 +534,8 @@ a:hover, a:active {
     max-width: 100%;
 }
 
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 175px;
     font-size: 72px;
     font-weight: bold;
@@ -520,8 +544,8 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 630px) and (min-width: 450px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 120px;
     font-size: 60px;
     font-weight: bold;
@@ -536,11 +560,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 @media screen and (max-width: 450px) and (min-width: 320px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 90px;
     font-size: 45px;
     font-weight: bold;
@@ -557,11 +581,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 @media screen and (max-width: 320px) and (min-width: 220px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 90px;
     font-size: 35px;
     font-weight: bold;
@@ -578,7 +602,7 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 
 
@@ -597,12 +621,12 @@ a:hover, a:active {
 
 .homepage-info-section .entry-content {
     margin-top: 30px;
-    
+
 
 }
 
 
- 
+
 .homepage-info-section .entry-content p {
     font-family: 'lora';
     font-size: 18px;
@@ -870,7 +894,7 @@ a:hover, a:active {
     margin-bottom: 20px;
     color: #CCDCF2;
     margin-left: 10px;
-    /*text-align: center !important;*/ 
+    /*text-align: center !important;*/
 }
 
 .next-events-section-header .entry-title,
@@ -880,8 +904,8 @@ a:hover, a:active {
     font-size: 48px;
     font-weight: lighter;
     line-height: 1;
-    
-    
+
+
 }
 
 @media screen and (max-width: 470px){
@@ -893,7 +917,7 @@ a:hover, a:active {
     font-weight: lighter;
     line-height: 1;
     text-align: center;
-    
+
 }
 }
 
@@ -905,16 +929,17 @@ a:hover, a:active {
 }*/
 
 .homepage-next-events{
-    
+
     /*background: url("bg-img/bg/Group\ 34.svg") no-repeat;
     background-color:#70DEF1;*/
     /* text-align: center; */
 
-    
+
     /*background: url("bg-img/bg/Group\ 34.svg") cover, ;*/
     background: url("bg-img/bg/Group\ 34(1).svg");
     background-color: #70DEF1;
     background-size: cover;
+    padding-top: 2px;
 }
 
 
@@ -1003,7 +1028,7 @@ a:hover, a:active {
 # Homepage - Regional Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    min-height: 1500px;
+    /* min-height: 1500px; */
     padding-top: 280px;
     background: url("bg-img/bg/Group\ 49.svg");
     background-color: #17224D;
@@ -1038,6 +1063,16 @@ a:hover, a:active {
     background: #9a28d7;
     padding: 5px 0;
     outline: none;
+}
+.homepage-regional-events .row{
+    margin-left: 0px;
+    margin-right: 0px;
+    /* height: 100px; */
+    /* border-left: 5px solid black; */
+}
+.homepage-regional-events .date-head{
+    margin-left: 2px;
+    /* border-left: 5px solid black; */
 }
 
 .homepage-regional-events-slider {
@@ -2239,11 +2274,13 @@ ul.tabs-nav .tab-nav.active {
 # Site Footer line 2239 to line 2383
 --------------------------------------------------------------*/
 .site-footer {
+    
     padding: 200px 0px 0px 0px;
-     background: url("bg-img/bg/Group\ 53.svg") no-repeat;
-     background-size: cover;
+    background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    background-size: cover;
     background-color: #70DEF1;
     text-align: center;
+    margin-top: 200px;
 }
 
 .footer-logo {
@@ -2276,8 +2313,7 @@ ul.tabs-nav .tab-nav.active {
     
 }
 .footer-social-two ul {
-    padding: 0;
-    margin-top: 45px;
+    margin-top: 25px;
     list-style: none;
     
 }
@@ -2291,11 +2327,12 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-copyright{
-    font-size: 14px;
+    font-size: 15px;
     color: #9CF1EB;
     font-family: "Lora";
     font-weight: normal;
-    margin-top: 90px;
+    margin-top: 10px;
+    padding-right: 30px;
 }
 
 @media screen and (max-width: 992px){
@@ -2382,7 +2419,6 @@ ul.tabs-nav .tab-nav.active {
 # Footer - finish
 --------------------------------------------------------------*/
 
-
 .back-to-top {
     position: fixed;
     z-index: 9999;
@@ -2431,7 +2467,7 @@ align-items: center; }
     -ms-flex: 0 0 110px;
     flex: 0 0 110px;
     /*max-width: 90px;*/
-    width: 110px; 
+    width: 110px;
     padding-right: 0px; }
 
     .single-cool-fact .scf-icon img {
@@ -2439,9 +2475,9 @@ align-items: center; }
         width: 90px;
         height: 90px;
     }
-    
+
   .single-cool-fact .scf-text h2 {
-    
+
     font-size: 60px;
     margin-bottom: 0;
     font-weight: bold;
@@ -2488,12 +2524,12 @@ align-items: center; }
 
 .featured-event {
     background-color: rgba(204, 220, 242, 0.04);
-    border-radius: 12px; 
+    border-radius: 12px;
     max-width: 220px;
-   /* min-width: 140px;*/ 
+   /* min-width: 140px;*/
     display: block;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 }
 
 .featured-event-title {
@@ -2545,15 +2581,15 @@ align-items: center; }
 }
 
 .next-events-section-header-ages .entry-title {
-    
+
     padding: 24px 0;
     font-size: 48px;
     color: #CCDCF2;
     font-weight: lighter;
     line-height: 1;
     padding-bottom: 60px;
-    
-    
+
+
 }
 .next-events-section-header-ages .entry-subtitle-ages {
     font-family: 'Lora';
@@ -2624,33 +2660,69 @@ align-items: center; }
     color: #FFFFFF;
     font-weight: lighter;
     margin-left: 0px;
-   
+
 }
+}
+
+.important-dates-date {
+    font-style:'Work Sans',sans-serif;
+    color:rgba(204, 220, 242, 1);
+}
+
+.important-dates-background {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-left: 5px outset rgba(23, 34, 77, 1);
+}
+
+.important-dates-text{
+    color:rgba(19, 45, 70, 1);
+}
+
+
+.events-background{
+    background-color: rgba(16, 26, 65, 0.17);
+    box-shadow: 0px 3px 6px rgba(23, 34, 77, 0.37);
+}
+
+.events-workshop-text{
+    font-family:"Work Sans";
+    font-weight:lighter;
+    color:rgba(16, 26, 65, 1);
+    font-size:18px;
 }
 
 
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
     background-size: 100%;
-    /*background-position: right top;
-    background-size: contain;*/
+    width: 100%;
+    background-position: top(200%) right;
 }
 
+@media only screen and (max-width: 1320px){
+    .first-and-second {
+        background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
+        background-size:auto auto;
+        width: 100%;
+        /* background-position: center right; */
+    }
+}
+
+
 .entry-alcher-logo {
-    
-    width:380px;
-    
+    max-width:250px;
 }
 
 .entry-button{
     font-size: 20px;
     font-family: 'Work Sans';
     color: #101A41;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     background-color: #9CF1EB;
     border-width: 0px;
     border-radius: 44px;
-    width: 336px;
+    width: 100%;
+    max-width: 350px;
     height: 56px;
 }
 
@@ -2661,9 +2733,9 @@ align-items: center; }
     padding-bottom: 60px;
 }
 
-    .entry-footer{
-        padding-top: 101px;
-    }
+.entry-footer{
+    padding-top: 0px;
+}
 
 
 .featured-events-div {
@@ -2704,7 +2776,7 @@ align-items: center; }
     font-size: 24px;
     font-family: 'Work Sans';
     font-weight: lighter;
-    
+
 }
 
 
@@ -2733,7 +2805,7 @@ align-items: center; }
   width: 20px;
   margin-left: 15px;
     margin-right: 15px;
-  
+
 }
 
 .dot-small {
@@ -2745,9 +2817,9 @@ align-items: center; }
 }
 
 .single-dot p{
-    
+
     font-size: 20px;
-    
+
 }
 }
 
@@ -2759,7 +2831,7 @@ align-items: center; }
 
   margin-left: 18px;
     margin-right: 18px;
-  
+
 }
 
 .dot-small {
@@ -2776,7 +2848,7 @@ align-items: center; }
 }
 
 .single-dot p{
-    
+
     font-size: 16px;
 }
 }
@@ -2790,7 +2862,7 @@ align-items: center; }
 
   margin-left: 10px;
     margin-right: 10px;
-  
+
 }
 
 .dot-small {
@@ -2807,7 +2879,7 @@ align-items: center; }
 }
 
 .single-dot p{
-    
+
     font-size: 16px;
 }
 }
@@ -2822,7 +2894,7 @@ align-items: center; }
 
   margin-left: 10px;
     margin-right: 10px;
-  
+
 }
 
 .dot-small {
@@ -2843,7 +2915,7 @@ align-items: center; }
 
 }
 .single-dot p{
-    
+
     font-size: 13px;
 }
 }
@@ -2856,7 +2928,7 @@ align-items: center; }
 
   margin-left: 6px;
     margin-right: 6px;
-  
+
 }
 
 .dot-small {
@@ -2877,7 +2949,7 @@ align-items: center; }
 
 }
 .single-dot p{
-    
+
     font-size: 11.5px;
 }
 }
@@ -2886,4 +2958,182 @@ align-items: center; }
 .timeline-dots-rows {
     padding-top: 40px;
     padding-bottom: 85px;
+
 }
+
+/* main-header */
+.main-header{
+    height: 750px;
+}
+
+.img .alcher-logo{
+    max-width:50px;
+}
+
+
+.custom-padding{
+        /* position: relative; */
+        align-content: center;
+        padding-left: 45px;
+}
+
+@media screen and (min-width: 992px) {
+    .custom-padding{
+        padding-left: 125px;
+        /* align-content: left; */
+    }
+}
+
+
+
+/* *********************************** */
+/* styles to initatives.htmnl */
+
+.single-tab button {
+    height: 180px;
+    width: 180px;
+    border-width: 0px;
+    border-radius: 9px;
+    background-color: rgba(16, 26, 65, 0.17) ;
+    background-image: url('bg-img/Mask Group 5.svg');
+    background-position: center; 
+    background-size: 85% 85%;
+    background-repeat: no-repeat;
+    /*rgba(16, 26, 65, 1)*/
+      
+}
+
+
+
+.single-tab button:hover {
+    
+    background-color: rgba(16, 26, 65, 0.33) ;
+    
+}
+
+.single-tab button.active {
+    
+    background-color: rgba(16, 26, 65, 1) ;
+    
+}
+
+
+
+.single-tab {
+    display: inline-block;
+    padding-left: 17px;
+    padding-right: 17px;
+
+}
+
+@media only screen and (max-width: 800px){
+.single-tab button {
+    height: 100px;
+    width: 100px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(16, 26, 65, 0.17) ;
+    background-image: url('bg-img/Mask Group 5.svg');
+    background-position: center; 
+    background-size: 92% 92%;
+    background-repeat: no-repeat;
+    
+      
+}
+.single-tab {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+}
+
+
+.tabs-navigation {
+    /*overflow:auto;*/
+    text-align: center;
+}
+
+.single-tab #nE-Unveiled{
+    
+    background-image: url('bg-img/Mask Group 4.svg');
+    
+      
+}
+
+.single-tab #udaan{
+
+    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+
+}
+
+
+.single-tab #jeeAdvanced{
+
+    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+    
+}
+
+
+.single-tab #bloodDonate{
+
+    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+    
+}
+.tabcontent {
+    display: none;
+}
+
+.tabcontentdefault{
+    display: block;
+}
+
+.tabcontent h3 {
+    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 54px;
+}
+
+
+
+.tabcontent p {
+    font-family: "Lora";
+    text-align: left;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.tabs-navigation {
+    margin-top: 300px;
+    margin-bottom: 80px;
+}
+
+.card-deck-heading h3{
+    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+
+@media only screen and (max-width: 420px){
+    .card-deck-heading h3 {
+        font-family: "Work Sans";
+        font-weight: lighter;
+        font-size: 40px;
+        margin-bottom: 54px;
+    }  
+}
+.featured-events-deck{
+    text-align: center !important;
+    display: inline-block;
+}
+
+
+
+
+/* styles to initiative.html ends here */
