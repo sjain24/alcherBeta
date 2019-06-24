@@ -226,6 +226,7 @@ a:hover, a:active {
 --------------------------------*/
 .site-navigation {
     position: absolute;
+    min-width: 75px;
     top: -22px;
     right: 15px;
     z-index: 9999;
@@ -258,6 +259,7 @@ a:hover, a:active {
 
 .site-navigation.show ul {
     left: 0;
+    max-width:80%;
 }
 
 .site-navigation ul li {
@@ -460,62 +462,29 @@ a:hover, a:active {
 .countdown-holder label {
     font-size: 13px;
 }
-
-@media screen and (min-width: 576px){
-    .hero-slider .entry-title {
-        font-size: 42px;
-    }
-
-    .countdown-holder {
-        margin-right: 24px;
-        font-size: 42px;
-    }
-
-    .countdown-holder label {
-        font-size: 18px;
-    }
-}
-
-
 @media screen and (min-width: 992px) {
-
-
-    .hero-slider {
-        /*height: 100vh;*/
-    }
 
     .hero-content {
         padding-top: 180px;
     }
 
-    .hero-slider .entry-title {
-        font-size: 72px;
-    }
 
-    .countdown-holder {
-        margin-right: 52px;
-        font-size: 60px;
-    }
-
-    .countdown-holder label {
-        font-size: 24px;
-    }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1250px){
     .hero-content {
         padding-top: 280px;
-    }
-
-    .swiper-button-next {
-        right: 64px;
-    }
-
-    .swiper-button-prev {
-        left: 64px;
+        min-height: 500px;
     }
 }
 
+
+@media screen and (min-width: 2250px){
+    .hero-content {
+        padding-top: 280px;
+        min-height: 800px;
+    }
+}
 
 /*--------------------------------------------------------------
 # Homepage - Info Section
@@ -2694,7 +2663,8 @@ align-items: center; }
 
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-    background-size: 100% 700px;
+    background-size: 100%;
+    min-height:1000px;
     width: 100%;
     background-position: top(200%) right;
     
@@ -2702,8 +2672,7 @@ align-items: center; }
 @media only screen and (max-width: 986px){
     .first-and-second {
        background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-       background-size: 100%;
-/*        background-position:right;  */
+        background-size: 100% 550px; 
       }
     
 }
@@ -2711,7 +2680,7 @@ align-items: center; }
 @media only screen and (max-width: 430px){
     .first-and-second {
        background: url('bg-img/mariana-bo-resize.png') no-repeat;
-        background-size: 100% 500px;
+        background-size: 100% 450px;
         width: 100%; 
       }
     
