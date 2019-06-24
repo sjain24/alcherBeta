@@ -225,6 +225,7 @@ a:hover, a:active {
 # Main Menu
 --------------------------------*/
 .site-navigation {
+    max-width: 80%;
     position: absolute;
     top: -22px;
     right: 15px;
@@ -2697,16 +2698,25 @@ align-items: center; }
     background-size: 100%;
     width: 100%;
     background-position: top(200%) right;
+    
+}
+@media only screen and (max-width: 986px){
+    .first-and-second {
+       background: url('bg-img/mariana-bo-resize.png') no-repeat;
+        background-size: 100% 1000px; 
+      }
+    
 }
 
-@media only screen and (max-width: 1320px){
+@media only screen and (max-width: 420px){
     .first-and-second {
-        background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-        background-size:auto auto;
-        width: 100%;
-        /* background-position: center right; */
-    }
+       background: url('bg-img/mariana-bo-resize.png') no-repeat;
+        background-size: 150% 650px;
+        width: 100%; 
+      }
+    
 }
+
 
 
 .entry-alcher-logo {
@@ -2987,7 +2997,7 @@ align-items: center; }
 
 
 /* *********************************** */
-/* styles to initatives.htmnl */
+/* styles to initatives.html*/
 
 .single-tab button {
     height: 180px;

@@ -14,13 +14,12 @@ height: 100%;
 margin: 0px !important;
 padding: 0px !important;
 overflow-x: hidden;
-background-color: #70DEF1;
+/* background-color: #70DEF1; */
 
 }
 
 body {
-    /* color: #2f2f2f; */
-    width:100%;
+    color: #2f2f2f;
     font-family: 'Calibri';
 }
 
@@ -226,6 +225,7 @@ a:hover, a:active {
 --------------------------------*/
 .site-navigation {
     position: absolute;
+    max-width: 80%;
     top: -22px;
     right: 15px;
     z-index: 9999;
@@ -243,7 +243,6 @@ a:hover, a:active {
 
 .site-navigation ul {
     position: fixed;
-    max-width: 80%;
     top: 0;
     left: -320px;
     z-index: 9999;
@@ -330,8 +329,7 @@ a:hover, a:active {
     padding: 15px 25px;
     background: #70DEF1;  
     border: 0px;  
-}
-
+} 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -535,8 +533,8 @@ a:hover, a:active {
     max-width: 100%;
 }
 
-.homepage-info-section .entry-title {
-    font-family: 'Work Sans';
+.homepage-info-section .entry-title { 
+    font-family: 'Work Sans';  
     margin-top: 175px;
     font-size: 72px;
     font-weight: bold;
@@ -545,8 +543,8 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 630px) and (min-width: 450px){
-.homepage-info-section .entry-title {
-    font-family: 'Work Sans';
+.homepage-info-section .entry-title { 
+    font-family: 'Work Sans';  
     margin-top: 120px;
     font-size: 60px;
     font-weight: bold;
@@ -561,11 +559,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-}
+} 
 
 @media screen and (max-width: 450px) and (min-width: 320px){
-.homepage-info-section .entry-title {
-    font-family: 'Work Sans';
+.homepage-info-section .entry-title { 
+    font-family: 'Work Sans';  
     margin-top: 90px;
     font-size: 45px;
     font-weight: bold;
@@ -582,11 +580,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-}
+} 
 
 @media screen and (max-width: 320px) and (min-width: 220px){
-.homepage-info-section .entry-title {
-    font-family: 'Work Sans';
+.homepage-info-section .entry-title { 
+    font-family: 'Work Sans';  
     margin-top: 90px;
     font-size: 35px;
     font-weight: bold;
@@ -603,7 +601,7 @@ a:hover, a:active {
     color: #132D46;
 }
 
-}
+} 
 
 
 
@@ -622,12 +620,12 @@ a:hover, a:active {
 
 .homepage-info-section .entry-content {
     margin-top: 30px;
-
+    
 
 }
 
 
-
+ 
 .homepage-info-section .entry-content p {
     font-family: 'lora';
     font-size: 18px;
@@ -665,7 +663,7 @@ a:hover, a:active {
     height: auto;
     padding: 110px 0 150px;
     background: url("bg-img/bg/Group\ 35.svg") no-repeat;
-    background-size: 100% !important;
+    background-size: cover !important;
 }
 .homepage-featured-events .event-content-wrap {
     position: relative;
@@ -895,7 +893,7 @@ a:hover, a:active {
     margin-bottom: 20px;
     color: #CCDCF2;
     margin-left: 10px;
-    /*text-align: center !important;*/
+    /*text-align: center !important;*/ 
 }
 
 .next-events-section-header .entry-title,
@@ -905,8 +903,8 @@ a:hover, a:active {
     font-size: 48px;
     font-weight: lighter;
     line-height: 1;
-
-
+    
+    
 }
 
 @media screen and (max-width: 470px){
@@ -918,7 +916,7 @@ a:hover, a:active {
     font-weight: lighter;
     line-height: 1;
     text-align: center;
-
+    
 }
 }
 
@@ -930,12 +928,12 @@ a:hover, a:active {
 }*/
 
 .homepage-next-events{
-
+    
     /*background: url("bg-img/bg/Group\ 34.svg") no-repeat;
     background-color:#70DEF1;*/
     /* text-align: center; */
 
-
+    
     /*background: url("bg-img/bg/Group\ 34.svg") cover, ;*/
     background: url("bg-img/bg/Group\ 34(1).svg");
     background-color: #70DEF1;
@@ -1030,7 +1028,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .homepage-regional-events {
     /* min-height: 1500px; */
-    padding-top: 280px;
+    padding-top: 150px;
+    padding-bottom: 190px;
     background: url("bg-img/bg/Group\ 49.svg");
     background-color: #17224D;
     background-size: cover;
@@ -2271,9 +2270,6 @@ ul.tabs-nav .tab-nav.active {
     color: #777;
 }
 
-/*--------------------------------------------------------------
-# Site Footer line 2239 to line 2383
---------------------------------------------------------------*/
 .site-footer {
     
     padding: 200px 0px 0px 0px;
@@ -2281,7 +2277,7 @@ ul.tabs-nav .tab-nav.active {
     background-size: cover;
     background-color: #70DEF1;
     text-align: center;
-    margin-top: 200px;
+    
 }
 
 .footer-logo {
@@ -2420,6 +2416,7 @@ ul.tabs-nav .tab-nav.active {
 # Footer - finish
 --------------------------------------------------------------*/
 
+
 .back-to-top {
     position: fixed;
     z-index: 9999;
@@ -2468,7 +2465,7 @@ align-items: center; }
     -ms-flex: 0 0 110px;
     flex: 0 0 110px;
     /*max-width: 90px;*/
-    width: 110px;
+    width: 110px; 
     padding-right: 0px; }
 
     .single-cool-fact .scf-icon img {
@@ -2476,9 +2473,9 @@ align-items: center; }
         width: 90px;
         height: 90px;
     }
-
+    
   .single-cool-fact .scf-text h2 {
-
+    
     font-size: 60px;
     margin-bottom: 0;
     font-weight: bold;
@@ -2525,12 +2522,12 @@ align-items: center; }
 
 .featured-event {
     background-color: rgba(204, 220, 242, 0.04);
-    border-radius: 12px;
+    border-radius: 12px; 
     max-width: 220px;
-   /* min-width: 140px;*/
+   /* min-width: 140px;*/ 
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
 }
 
 .featured-event-title {
@@ -2582,15 +2579,15 @@ align-items: center; }
 }
 
 .next-events-section-header-ages .entry-title {
-
+    
     padding: 24px 0;
     font-size: 48px;
     color: #CCDCF2;
     font-weight: lighter;
     line-height: 1;
     padding-bottom: 60px;
-
-
+    
+    
 }
 .next-events-section-header-ages .entry-subtitle-ages {
     font-family: 'Lora';
@@ -2661,7 +2658,7 @@ align-items: center; }
     color: #FFFFFF;
     font-weight: lighter;
     margin-left: 0px;
-
+   
 }
 }
 
@@ -2694,43 +2691,35 @@ align-items: center; }
 
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-    background-size: 100% 700px;
+    background-size: 100%;
     width: 100%;
     background-position: top(200%) right;
-    
-}
-@media only screen and (max-width: 986px){
-    .first-and-second {
-       background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-       background-size: 100%;
-/*        background-position:right;  */
-      }
-    
 }
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 1320px){
     .first-and-second {
-       background: url('bg-img/mariana-bo-resize.png') no-repeat;
-        background-size: 100% 500px;
-        width: 100%; 
-      }
-    
+        background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
+        background-size:auto auto;
+        width: 100%;
+        /* background-position: center right; */
+    }
 }
 
 .entry-alcher-logo {
-    max-width:250px;
+    
+    width:380px;
+    
 }
 
 .entry-button{
     font-size: 20px;
     font-family: 'Work Sans';
     color: #101A41;
-    /* font-weight: lighter; */
+    font-weight: lighter;
     background-color: #9CF1EB;
     border-width: 0px;
     border-radius: 44px;
-    width: 100%;
-    max-width: 350px;
+    width: 336px;
     height: 56px;
 }
 
@@ -2740,10 +2729,10 @@ align-items: center; }
     text-align: center;
     padding-bottom: 60px;
 }
-
-.entry-footer{
-    padding-top: 0px;
-}
+/* 
+    .entry-footer{
+        padding-top: 101px;
+    } */
 
 
 .featured-events-div {
@@ -2784,7 +2773,7 @@ align-items: center; }
     font-size: 24px;
     font-family: 'Work Sans';
     font-weight: lighter;
-
+    
 }
 
 
@@ -2813,7 +2802,7 @@ align-items: center; }
   width: 20px;
   margin-left: 15px;
     margin-right: 15px;
-
+  
 }
 
 .dot-small {
@@ -2825,9 +2814,9 @@ align-items: center; }
 }
 
 .single-dot p{
-
+    
     font-size: 20px;
-
+    
 }
 }
 
@@ -2839,7 +2828,7 @@ align-items: center; }
 
   margin-left: 18px;
     margin-right: 18px;
-
+  
 }
 
 .dot-small {
@@ -2856,7 +2845,7 @@ align-items: center; }
 }
 
 .single-dot p{
-
+    
     font-size: 16px;
 }
 }
@@ -2870,7 +2859,7 @@ align-items: center; }
 
   margin-left: 10px;
     margin-right: 10px;
-
+  
 }
 
 .dot-small {
@@ -2887,7 +2876,7 @@ align-items: center; }
 }
 
 .single-dot p{
-
+    
     font-size: 16px;
 }
 }
@@ -2902,7 +2891,7 @@ align-items: center; }
 
   margin-left: 10px;
     margin-right: 10px;
-
+  
 }
 
 .dot-small {
@@ -2923,7 +2912,7 @@ align-items: center; }
 
 }
 .single-dot p{
-
+    
     font-size: 13px;
 }
 }
@@ -2936,7 +2925,7 @@ align-items: center; }
 
   margin-left: 6px;
     margin-right: 6px;
-
+  
 }
 
 .dot-small {
@@ -2957,7 +2946,7 @@ align-items: center; }
 
 }
 .single-dot p{
-
+    
     font-size: 11.5px;
 }
 }
@@ -2991,359 +2980,6 @@ align-items: center; }
         /* align-content: left; */
     }
 }
-
-
-
-/* *********************************** */
-/* styles to initatives.htmnl */
-
-.single-tab button {
-    height: 180px;
-    width: 180px;
-    border-width: 0px;
-    border-radius: 9px;
-    background-color: rgba(16, 26, 65, 0.17) ;
-    background-image: url('bg-img/Mask Group 5.svg');
-    background-position: center; 
-    background-size: 85% 85%;
-    background-repeat: no-repeat;
-    /*rgba(16, 26, 65, 1)*/
-      
-}
-
-
-
-.single-tab button:hover {
-    
-    background-color: rgba(16, 26, 65, 0.33) ;
-    
-}
-
-.single-tab button.active {
-    
-    background-color: rgba(16, 26, 65, 1) ;
-    
-}
-
-
-
-.single-tab {
-    display: inline-block;
-    padding-left: 17px;
-    padding-right: 17px;
-
-}
-
-@media only screen and (max-width: 800px){
-.single-tab button {
-    height: 100px;
-    width: 100px;
-    border-width: 0px;
-    border-radius: 4px;
-    background-color: rgba(16, 26, 65, 0.17) ;
-    background-image: url('bg-img/Mask Group 5.svg');
-    background-position: center; 
-    background-size: 92% 92%;
-    background-repeat: no-repeat;
-    
-      
-}
-.single-tab {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
-
-}
-
-
-.tabs-navigation {
-    /*overflow:auto;*/
-    text-align: center;
-}
-
-.single-tab #nE-Unveiled{
-    
-    background-image: url('bg-img/Mask Group 4.svg');
-    
-      
-}
-
-.single-tab #udaan{
-
-    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
-
-}
-
-
-.single-tab #jeeAdvanced{
-
-    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
-    
-}
-
-
-.single-tab #bloodDonate{
-
-    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
-    
-}
-.tabcontent {
-    display: none;
-}
-
-.tabcontentdefault{
-    display: block;
-}
-
-.tabcontent h3 {
-    font-family: "Work Sans";
-    font-weight: lighter;
-    font-size: 50px;
-    margin-bottom: 54px;
-}
-
-
-
-.tabcontent p {
-    font-family: "Lora";
-    text-align: left;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 1.2;
-}
-
-.tabs-navigation {
-    margin-top: 300px;
-    margin-bottom: 80px;
-}
-
-.card-deck-heading h3{
-    font-family: "Work Sans";
-    font-weight: lighter;
-    font-size: 50px;
-    margin-bottom: 30px;
-    margin-top: 150px;
-}
-
-
-@media only screen and (max-width: 420px){
-    .card-deck-heading h3 {
-        font-family: "Work Sans";
-        font-weight: lighter;
-        font-size: 40px;
-        margin-bottom: 54px;
-    }  
-}
-.featured-events-deck{
-    text-align: center !important;
-    display: inline-block;
-}
-
-
-
-
-/* styles to initiative.html ends here */
-
-/* team style */
-
-
-.hell {
-    /*background-color: #e5e5e5;*/
-    padding: 15px 15px;
-    /*display: block;*/
-
-}
-
-.card-team{
-    background-color: rgba(16, 26, 65, 0.17);
-    border-radius: 8px;
-    border-width: 0px;
-}
-@media screen and (min-width: 1200px){
-    .card-team{
-    width: 255px;
-}
-}
-
-
-.card-title{
-    font-family: "Work Sans";
-    font-weight: bolder;
-    font-size: 18px;
-    color: #1D324D;
-}
-.card-subtitle{
-    font-family: "Work Sans";
-    font-weight: normal;
-    font-size: 12px;
-    margin-top: -7px;
-    color: #1D324D;
-}
-/*.card-content-team{
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}*/
-.card-img-div{
-    width: 85%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    /*padding-top: 20px; */
-}
-
-
-.card-text{
-    font-family: "Work Sans";
-    font-weight: normal;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 1.5px;
-    color: #1D324D;
-}
-
-
-
-
-
-
-
-
-.footer-social-icons ul {
-    padding: 0;
-    margin-top: 15px;
-    list-style: none;
-    margin-bottom: 0px;
-
-    
-}
-.footer-social-icons .fa-stack{
-    font-size: 14px;
-}
-
-.footer-social-icons .fa-stack-1x{
-    color: #fff;
-    font-size: 14px;
-}
-
-.footer-social-icons li{
-    margin-left: 6px;
-    margin-right: 6px;
-
-}
-
-.icon-linkedin{
-    color: #0077B5;
-}
-
-.icon-instagram {
-    color: #C13584;
-
-}
-
-.card-team{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-@media screen and (max-width: 1200px){
-
-.card-title{
-    
-    font-weight: bolder;
-    font-size: 26px;
-    
-}
-.card-subtitle{
-    font-weight: normal;
-    font-size: 16px;
-    margin-top: -7px;
-    
-}
-.card-text{
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 30px;
-   
-}
-
-
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-.team-heading h3 {
-    font-size: 40px;
-    font-family: "Work Sans";
-    font-weight: bolder;
-    color: #101A41;
-
-}
-
-@media screen and (max-width: 1200px) and (min-width: 992px){
-    .one {
-    margin-right: 0px;
-}
-
-.two {
-    margin-left: 0px;
-}
-}
-
-
-@media screen and (min-width: 1200px){
-    .onebig {
-    margin-right: 0px;
-}
-
-.twobig {
-    margin-left: 0px;
-}
-}
-
-
-
-
-.with-header {
-    padding-top: 20px;
-}
-
-
-
-
-.card-content-and-heading{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-.first-row{
-    padding-top: 100px;
-}
-
-.not-first-heading{
-    margin-top: 100px;
-}
-
-
-
-
-
-
-
-
 
 
 
