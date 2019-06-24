@@ -10,6 +10,7 @@
 
 body {
     color: #2f2f2f;
+    background-color: #70DEF1;
     font-family: 'Calibri';
 }
 
@@ -105,6 +106,7 @@ a:hover, a:active {
     color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -116,19 +118,22 @@ a:hover, a:active {
 }
 
 .site-header .site-title img {
-    max-height: 64px;
+    max-height: auto;
+    max-width: 154px;
 }
 
 /*
 # Header Bar
 --------------------------------*/
 .header-bar {
+    font-family: 'Work Sans', sans-serif;
+    background: #122a4d;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
-    padding: 14px 0;
+    padding: 25px 0;
 }
 
 /*
@@ -155,10 +160,10 @@ a:hover, a:active {
 .hamburger-menu {
     position: relative;
     width: 100%;
-    max-width: 24px;
+    max-width: 30px;
     height: 22px;
     margin-left: auto;
-    transition: .5s ease-in-out;
+    transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
 }
 
@@ -211,6 +216,8 @@ a:hover, a:active {
 # Main Menu
 --------------------------------*/
 .site-navigation {
+    /* max-width: 80%; */
+    min-width: 75px;
     position: absolute;
     top: -22px;
     right: 15px;
@@ -219,6 +226,7 @@ a:hover, a:active {
     height: 22px;
     overflow: hidden;
     list-style: none;
+    padding-left: 48px;
     transition: all .35s;
 }
 
@@ -232,17 +240,17 @@ a:hover, a:active {
     left: -320px;
     z-index: 9999;
     width: 320px;
-    max-width: 80%;
     height: 100vh;
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #9a28d7;
+    background:#17224d;
     transition: all 0.35s;
 }
 
 .site-navigation.show ul {
     left: 0;
+    max-width: 80%;
 }
 
 .site-navigation ul li {
@@ -267,6 +275,7 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 992px) {
+    /* for desktop */
     .site-navigation {
         position: relative;
         top: auto;
@@ -293,6 +302,8 @@ a:hover, a:active {
     .site-navigation ul li a {
         color: #fff;
     }
+
+    
 }
 
 /*
@@ -300,13 +311,18 @@ a:hover, a:active {
 --------------------------------*/
 .site-header .buy-tickets {
     margin-right: 45px;
-    text-align: right;
+    text-align: center;
+    color: #101A41;
+}
+.site-header .buy-tickets a:visited{
+    color:#101A41;
 }
 
 .site-header .buy-tickets .btn,
 .hero-slider .btn {
-    padding: 16px 46px;
-    border: 2px solid #fff;
+    padding: 15px 25px;
+    background: #70DEF1;  
+    border: 0px;  
 }
 
 /*--------------------------------------------------------------
@@ -316,8 +332,8 @@ a:hover, a:active {
 }
 
 .hero-content {
-    padding-top: 150px;
-    padding-bottom: 120px;
+    padding-top: 175px;
+    padding-bottom: 135px;
 }
 
 .hero-content .container,
@@ -334,7 +350,9 @@ a:hover, a:active {
 }
 
 .hero-slider .btn {
-    margin-top: 45px;
+    margin-top: 20px;
+    width: 75%;
+    max-width: 300px;
 }
 
 .swiper-container-horizontal >.swiper-pagination-bullets,
@@ -454,42 +472,28 @@ a:hover, a:active {
 
 @media screen and (min-width: 992px) {
 
-
-    .hero-slider {
-        /*height: 100vh;*/
-    }
-
     .hero-content {
         padding-top: 180px;
     }
 
-    .hero-slider .entry-title {
-        font-size: 72px;
-    }
 
-    .countdown-holder {
-        margin-right: 52px;
-        font-size: 60px;
-    }
-
-    .countdown-holder label {
-        font-size: 24px;
-    }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1250px){
     .hero-content {
         padding-top: 280px;
-    }
-
-    .swiper-button-next {
-        right: 64px;
-    }
-
-    .swiper-button-prev {
-        left: 64px;
+        min-height: 500px;
     }
 }
+
+
+@media screen and (min-width: 2250px){
+    .hero-content {
+        padding-top: 280px;
+        min-height: 800px;
+    }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -510,8 +514,8 @@ a:hover, a:active {
     max-width: 100%;
 }
 
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 175px;
     font-size: 72px;
     font-weight: bold;
@@ -520,8 +524,8 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 630px) and (min-width: 450px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 120px;
     font-size: 60px;
     font-weight: bold;
@@ -536,11 +540,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 @media screen and (max-width: 450px) and (min-width: 320px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 90px;
     font-size: 45px;
     font-weight: bold;
@@ -557,11 +561,11 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 @media screen and (max-width: 320px) and (min-width: 220px){
-.homepage-info-section .entry-title { 
-    font-family: 'Work Sans';  
+.homepage-info-section .entry-title {
+    font-family: 'Work Sans';
     margin-top: 90px;
     font-size: 35px;
     font-weight: bold;
@@ -578,7 +582,7 @@ a:hover, a:active {
     color: #132D46;
 }
 
-} 
+}
 
 
 
@@ -597,12 +601,12 @@ a:hover, a:active {
 
 .homepage-info-section .entry-content {
     margin-top: 30px;
-    
+
 
 }
 
 
- 
+
 .homepage-info-section .entry-content p {
     font-family: 'lora';
     font-size: 18px;
@@ -640,7 +644,7 @@ a:hover, a:active {
     height: auto;
     padding: 110px 0 150px;
     background: url("bg-img/bg/Group\ 35.svg") no-repeat;
-    background-size: cover !important;
+    background-size: 100% !important;
 }
 .homepage-featured-events .event-content-wrap {
     position: relative;
@@ -2239,43 +2243,141 @@ ul.tabs-nav .tab-nav.active {
 # Site Footer
 --------------------------------------------------------------*/
 .site-footer {
-    padding: 75px 0;
-     background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    
+    padding: 200px 0px 0px 0px;
+    background: url("bg-img/bg/Group\ 53.svg") no-repeat;
+    background-size: cover;
     background-color: #70DEF1;
     text-align: center;
+    margin-top: 200px;
 }
 
+.footer-logo {
+    
+    text-align: left;
+    height: 60px;
+}
 .footer-logo img {
+    height: 100%;
     max-width: 100%;
 }
 
-.footer-navigation ul,
+
+
+.footer-heading h3{
+    font-size: 38px;
+    color: #FFFFFF;
+    font-family: "Work Sans";
+    font-weight: normal;
+}
+
+.footer-contact-info{
+    text-align: right;
+}
+
 .footer-social ul {
     padding: 0;
-    margin: 32px 0 0;
+    margin-top: 45px;
     list-style: none;
+    
+}
+.footer-social-two ul {
+    margin-top: 25px;
+    list-style: none;
+    
 }
 
-.footer-navigation li {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+.footer-social-two li{
+    display: none;
 }
 
-.footer-navigation li a {
+.social-icons-list li{
+    margin-right: 33px;
+}
+
+.footer-copyright{
+    font-size: 15px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 992px){
+    .footer-contact-info{
+    text-align: left;
+}
+.footer-logo {
+    
+    text-align: center;
+    margin-bottom: 90px;
+    
+}
+
+.footer-social  li {
+   
+   display: none;
+    
+    
+}
+
+.footer-social-two li{
     display: block;
-    padding: 8px 12px;
-    color: #fff;
 }
 
-.footer-social li a {
-    display: block;
-    width: 16px;
-    height: 22px;
-    margin: 12px;
-    color: #8f8f8f;
-    transition: all .35s;
+.footer-heading h3{
+    font-size: 28px;
+    
 }
+.footer-copyright{
+    
+    margin-top: 30px;
+}
+}
+
+.footer-contact-info .footer-info {
+    margin-top: 30px;
+}
+
+
+
+.iname-info {
+    font-size: 20px;
+    color: #9CF1EB;
+    font-family: "Lora";
+    font-weight: normal;
+}
+
+
+
+
+.icon-facebook{
+    color:#3b5998;
+
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-googleplus{
+    color:#DD4B39;
+}
+
+
+.fa-stack{
+    font-size: 26px;
+}
+
+.fa-stack-1x{
+    color: #9CF1EB;
+    font-size: 20px;
+}
+
+
+
+
 
 .footer-social li a:hover {
     color: #fff;
@@ -2393,21 +2495,31 @@ align-items: center; }
 
 
 
-
-
-
 .first-and-second {
     background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
     background-size: 100%;
-    /*background-position: right top;
-    background-size: contain;*/
+    min-height:1000px;
+    width: 100%;
+    background-position: top(200%) right;
+    
+}
+@media only screen and (max-width: 986px){
+    .first-and-second {
+       background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
+        background-size: 100% 550px; 
+      }
+    
 }
 
-.entry-alcher-logo {
-    
-    width:380px;
+@media only screen and (max-width: 430px){
+    .first-and-second {
+       background: url('bg-img/mariana-bo-resize.png') no-repeat;
+        background-size: 100% 450px;
+        width: 100%; 
+      }
     
 }
+
 
 .entry-button{
     font-size: 20px;
@@ -2507,12 +2619,12 @@ align-items: center; }
 
 .single-tab #udaan{
 
-    background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
+    background-image: url('bg-img/Asset 1.svg'); /*Image Url Here*/
 
 }
 
 
-.single-tab #jeeAdvanced{
+.single-tab #otherinit{
 
     background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
     
@@ -2578,10 +2690,6 @@ align-items: center; }
 
 }
 
-.card-body a:hover {
-    text-decoration: none;
-    color: inherit;
-}
 
 
 .featured-event-img {
@@ -2603,7 +2711,7 @@ align-items: center; }
 
 
 .card-deck-heading h3{
-    font-family: "Work Sans"
+    font-family: "Work Sans";
     font-weight: lighter;
     font-size: 50px;
     margin-bottom: 30px;
@@ -2613,16 +2721,175 @@ align-items: center; }
 
 @media only screen and (max-width: 420px){
     .card-deck-heading h3 {
-    font-family: "Work Sans"
+    font-family: "Work Sans";
     font-weight: lighter;
     font-size: 40px;
     margin-bottom: 54px;
 }
 }
 
+.initiatives-panels h3{
+    text-align: left;
+    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.initiatives-panels {
+    margin-top: 60px;
+}
+
+
+.card-team{
+    background-color: rgba(16, 26, 65, 0.17);
+    border-radius: 8px;
+    border-width: 0px;
+}
+@media screen and (min-width: 1200px){
+    .card-team{
+    width: 255px;
+}
+}
+
+
+.card-title{
+    font-family: "Work Sans";
+    font-weight: bolder;
+    font-size: 18px;
+    color: #1D324D;
+}
+.card-subtitle{
+    font-family: "Work Sans";
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: -7px;
+    color: #1D324D;
+}
+/*.card-content-team{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}*/
+.card-img-div{
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /*padding-top: 20px; */
+}
+
+
+.card-text{
+    font-family: "Work Sans";
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    color: #1D324D;
+}
 
 
 
+
+
+
+
+
+.footer-social-icons ul {
+    padding: 0;
+    margin-top: 15px;
+    list-style: none;
+    margin-bottom: 0px;
+
+    
+}
+.footer-social-icons .fa-stack{
+    font-size: 14px;
+}
+
+.footer-social-icons .fa-stack-1x{
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-social-icons li{
+    margin-left: 6px;
+    margin-right: 6px;
+
+}
+
+.icon-linkedin{
+    color: #0077B5;
+}
+
+.icon-instagram {
+    color: #C13584;
+
+}
+.icon-facebook{
+    color:#3b5998;
+
+}
+
+.icon-twitter{
+    color:#00aced;
+}
+
+.icon-googleplus{
+    color:#DD4B39;
+}
+
+
+.footer-social .fa-stack{
+    font-size: 26px;
+}
+
+.footer-social .fa-stack-1x{
+    color: #9CF1EB;
+    font-size: 20px;
+}
+
+.card-team{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media screen and (max-width: 1200px){
+
+.card-title{
+    
+    font-weight: bolder;
+    font-size: 26px;
+    
+}
+.card-subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: -7px;
+    
+}
+.card-text{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 30px;
+   
+}
+
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
