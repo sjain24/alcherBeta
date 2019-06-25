@@ -29,6 +29,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
 </head>
 
 <body>
@@ -63,11 +71,7 @@
                         </nav><!-- .site-navigation -->
                     </div><!-- .col -->
     
-                    <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
-                        <div class="buy-tickets">
-                            <a class="btn" href="#">Register</a>
-                        </div><!-- .buy-tickets -->
-                    </div><!-- .col -->
+                        
                 </div><!-- .row -->
             </div><!-- .container-fluid -->
         </div>

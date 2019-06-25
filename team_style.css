@@ -281,6 +281,7 @@ a:hover, a:active {
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {
     border-color: #2f2f2f;
+    color:aquamarine;
 }
 
 @media screen and (min-width: 992px) {
