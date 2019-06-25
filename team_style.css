@@ -312,7 +312,7 @@ a:hover, a:active {
         color: #fff;
     }
 
-    
+
 }
 
 /*
@@ -330,8 +330,8 @@ a:hover, a:active {
 .site-header .buy-tickets .btn,
 .hero-slider .btn {
     padding: 15px 25px;
-    background: #70DEF1;  
-    border: 0px;  
+    background: #70DEF1;
+    border: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -2244,7 +2244,7 @@ ul.tabs-nav .tab-nav.active {
 # Site Footer line 2239 to line 2383
 --------------------------------------------------------------*/
 .site-footer {
-    
+
     padding: 200px 0px 0px 0px;
     background: url("bg-img/bg/Group\ 53.svg") no-repeat;
     background-size: cover;
@@ -2254,7 +2254,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-logo {
-    
+
     text-align: left;
     height: 60px;
 }
@@ -2280,12 +2280,12 @@ ul.tabs-nav .tab-nav.active {
     padding: 0;
     margin-top: 45px;
     list-style: none;
-    
+
 }
 .footer-social-two ul {
     margin-top: 25px;
     list-style: none;
-    
+
 }
 
 .footer-social-two li{
@@ -2310,17 +2310,17 @@ ul.tabs-nav .tab-nav.active {
     text-align: left;
 }
 .footer-logo {
-    
+
     text-align: center;
     margin-bottom: 90px;
-    
+
 }
 
 .footer-social  li {
-   
+
    display: none;
-    
-    
+
+
 }
 
 .footer-social-two li{
@@ -2329,10 +2329,10 @@ ul.tabs-nav .tab-nav.active {
 
 .footer-heading h3{
     font-size: 28px;
-    
+
 }
 .footer-copyright{
-    
+
     margin-top: 30px;
 }
 }
@@ -2667,23 +2667,23 @@ align-items: center; }
     min-height:1000px;
     width: 100%;
     background-position: top(200%) right;
-    
+
 }
 @media only screen and (max-width: 986px){
     .first-and-second {
        background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
-        background-size: 100% 550px; 
+        background-size: 100% 550px;
       }
-    
+
 }
 
 @media only screen and (max-width: 430px){
     .first-and-second {
        background: url('bg-img/mariana-bo-resize.png') no-repeat;
         background-size: 100% 450px;
-        width: 100%; 
+        width: 100%;
       }
-    
+
 }
 
 .entry-alcher-logo {
@@ -2973,25 +2973,25 @@ align-items: center; }
     border-radius: 9px;
     background-color: rgba(16, 26, 65, 0.17) ;
     background-image: url('bg-img/Mask Group 5.svg');
-    background-position: center; 
+    background-position: center;
     background-size: 85% 85%;
     background-repeat: no-repeat;
     /*rgba(16, 26, 65, 1)*/
-      
+
 }
 
 
 
 .single-tab button:hover {
-    
+
     background-color: rgba(16, 26, 65, 0.33) ;
-    
+
 }
 
 .single-tab button.active {
-    
+
     background-color: rgba(16, 26, 65, 1) ;
-    
+
 }
 
 
@@ -3011,11 +3011,11 @@ align-items: center; }
     border-radius: 4px;
     background-color: rgba(16, 26, 65, 0.17) ;
     background-image: url('bg-img/Mask Group 5.svg');
-    background-position: center; 
+    background-position: center;
     background-size: 92% 92%;
     background-repeat: no-repeat;
-    
-      
+
+
 }
 .single-tab {
     display: inline-block;
@@ -3033,10 +3033,10 @@ align-items: center; }
 }
 
 .single-tab #nE-Unveiled{
-    
+
     background-image: url('bg-img/Mask Group 4.svg');
-    
-      
+
+
 }
 
 .single-tab #udaan{
@@ -3049,14 +3049,14 @@ align-items: center; }
 .single-tab #jeeAdvanced{
 
     background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
-    
+
 }
 
 
 .single-tab #bloodDonate{
 
     background-image: url('bg-img/Mask Group 4.svg'); /*Image Url Here*/
-    
+
 }
 .tabcontent {
     display: none;
@@ -3103,7 +3103,7 @@ align-items: center; }
         font-weight: lighter;
         font-size: 40px;
         margin-bottom: 54px;
-    }  
+    }
 }
 .featured-events-deck{
     text-align: center !important;
@@ -3191,7 +3191,7 @@ align-items: center; }
     list-style: none;
     margin-bottom: 0px;
 
-    
+
 }
 .footer-social-icons .fa-stack{
     font-size: 14px;
@@ -3205,6 +3205,7 @@ align-items: center; }
 .footer-social-icons li{
     margin-left: 6px;
     margin-right: 6px;
+    z-index: 99999;
 
 }
 
@@ -3227,22 +3228,22 @@ align-items: center; }
 @media screen and (max-width: 1200px){
 
 .card-title{
-    
+
     font-weight: bolder;
     font-size: 26px;
-    
+
 }
 .card-subtitle{
     font-weight: normal;
     font-size: 16px;
     margin-top: -7px;
-    
+
 }
 .card-text{
     font-weight: normal;
     font-size: 18px;
     margin-top: 30px;
-   
+
 }
 
 
@@ -3305,14 +3306,3 @@ a:hover{
 .not-first-heading{
     margin-top: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
