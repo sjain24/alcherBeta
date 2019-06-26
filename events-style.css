@@ -2990,7 +2990,7 @@ align-items: center; }
 }
 
 .card.active{
-    background-color: rgba(16, 26, 65, 0.70);
+    background-color: rgba(16, 26, 65, 1);
 }
 
 
@@ -3118,4 +3118,26 @@ align-items: center; }
     margin: 8px 30px 8px 30px;
 }
 
-/* style for information section ends here /*
+/* style for information section ends here */
+
+/*style for contents of pronites section */
+
+.pronites-style{
+
+    color:rgba(255,255,255);
+    padding-left: 70px;
+    padding-bottom: 70px;
+}
+
+.pronitesContent{
+    animation: fadeEffect 1.5s; /* Fading effect takes 1 second */ 
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.card.card-team:hover{
+    background-color: rgba(16, 26, 65, 0.17);
+}
