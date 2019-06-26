@@ -34,7 +34,7 @@
     <script src="js/events.js"></script>
 </head>
 
-<body onload="hideRules(); hideSubModules();">
+<body onload="hideRules(); hideSubModules(); hidePronitesContent(); loadFirstModule();">
     <div class="first-and-second">
         <header class="site-header">
             <div class="header-bar">
@@ -111,8 +111,9 @@
 
 
                     <div class="card-deck">
-                        <div class="card events-background modules card-custom card-custom"
-                            onclick="openModules(event,'LITERARY'); hideRules();"><img src="SVG/events/literary.svg"
+                        <div class="card events-background modules card-custom card-custom" id="firstModule"
+                            onclick="openModules(event,'LITERARY'); hideRules(); setOriginalImage(); setActiveImage('LITERARY-image'); ">
+                            <img id="LITERARY-image" src="SVG/events/literary.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -120,7 +121,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'LCA'); hideRules();"><img src="SVG/events/lights.svg"
+                            onclick="openModules(event,'LCA'); hideRules();  setOriginalImage(); 
+                            setActiveImage('LCA-image'); ">
+                            <img id= "LCA-image" src="SVG/events/lights.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -128,7 +131,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom "
-                            onclick="openModules(event,'SPORTS'); hideRules();"><img src="SVG/events/sports.svg"
+                            onclick="openModules(event,'SPORTS'); hideRules(); setOriginalImage(); 
+                            setActiveImage('SPORTS-image'); ">
+                            <img id="SPORTS-image" src="SVG/events/sports.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -136,7 +141,8 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'MUSIC'); hideRules();"><img src="SVG/events/music.svg"
+                            onclick="openModules(event,'MUSIC'); hideRules(); setOriginalImage(); setActiveImage('MUSIC-image'); ">
+                            <img id="MUSIC-image" src="SVG/events/music.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -144,7 +150,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'DANCE'); hideRules();"><img src="SVG/events/dance.svg"
+                            onclick="openModules(event,'DANCE'); hideRules(); setOriginalImage();
+                            setActiveImage('DANCE-image'); ">
+                            <img id="DANCE-image" src="SVG/events/dance.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -160,11 +168,9 @@
     margin-bottom: 40px;
 
     " id="LITERARY">
-                        <div class="card events-background events" onclick="openEvent(event,'JAM')">
+                        <div class="card events-background events" id="firstEvent" onclick="openEvent(event,'JAM')">
                             <div class="card-body">
-                                <p class="card-text events-workshop-text text" style="
-    padding-top: 15px;
-    ">JAM</p>
+                                <p class="card-text events-workshop-text text">JAM</p>
                             </div>
                         </div>
                         <div class="card events-background events" onclick="openEvent(event,'MEA')">
@@ -181,9 +187,8 @@
 
                         <div class="card events-background events " onclick="openEvent(event,'PS')">
                             <div class="card-body">
-                                <p class="card-text events-workshop-text" style="
-    padding-top: 15px;
-    ">POETRY SLAM</p>
+                                <p class="card-text events-workshop-text"
+    >POETRY SLAM</p>
                             </div>
                         </div>
 
@@ -427,12 +432,12 @@
                     <div class="card-deck subModule" style=" margin-top: 40px; margin-bottom: 40px; " id="SPORTS">
                         <div class="card events-background events" onclick="openEvent(event,'SPORTS1')">
                             <div class="card-body">
-                                <p class="card-text events-workshop-text text">5 ON 5 FOOTBALL</p>
+                                <p class="card-text events-workshop-text text" style="padding-top: 15px;">5 ON 5 FOOTBALL</p>
                             </div>
                         </div>
                         <div class="card events-background events" onclick="openEvent(event,'SPORTS2')">
                             <div class="card-body">
-                                <p class="card-text events-workshop-text">ARM WRESTLING</p>
+                                <p class="card-text events-workshop-text" style="padding-top: 15px;">ARM WRESTLING</p>
                             </div>
                         </div>
 
@@ -450,7 +455,7 @@
 
                         <div class="card events-background events" onclick="openEvent(event,'SPORTS5')">
                             <div class="card-body">
-                                <p class="card-text events-workshop-text">3 ON 3 VOLLEYBALL</p>
+                                <p class="card-text events-workshop-text" style="padding-top: 15px;">3 ON 3 VOLLEYBALL</p>
                             </div>
                         </div>
 
@@ -1392,7 +1397,9 @@
     margin-top: 40px;
     ">
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'STAGECRAFT'); hideRules();"><img
+                            onclick="openModules(event,'STAGECRAFT'); hideRules(); setOriginalImage();
+                            setActiveImage('STAGE-image');">
+                            <img id="STAGE-image"
                                 src="SVG/events/stage craft.svg" style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -1401,7 +1408,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'VOGUENATION'); hideRules();"><img src="SVG/events/vogue.svg"
+                            onclick="openModules(event,'VOGUENATION'); hideRules(); setOriginalImage();
+                            setActiveImage('VOGUE-image'); ">
+                            <img id="VOGUE-image" src="SVG/events/vogue.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -1410,7 +1419,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'CLASSAPART'); hideRules();"><img src="SVG/events/music.svg"
+                            onclick="openModules(event,'CLASSAPART'); hideRules(); setOriginalImage();
+                            setActiveImage('CLASS-image'); ">
+                            <img id="CLASS-image" src="SVG/events/music.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -1419,7 +1430,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'ARTTALKIES'); hideRules();"><img src="SVG/events/art.svg"
+                            onclick="openModules(event,'ARTTALKIES'); hideRules(); setOriginalImage();
+                            setActiveImage('ART-image'); ">
+                            <img id="ART-image" src="SVG/events/art.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -1428,7 +1441,9 @@
                             </div>
                         </div>
                         <div class="card events-background modules card-custom"
-                            onclick="openModules(event,'INFORMALS'); hideRules();"><img src="SVG/events/informal.svg"
+                            onclick="openModules(event,'INFORMALS'); hideRules(); setOriginalImage();
+                            setActiveImage('INFORMALS-image'); ">
+                            <img id="INFORMALS-image" src="SVG/events/informal.svg"
                                 style="width:100%" class="card-img-top">
 
                             <div class="card-title text-center ">
@@ -2468,8 +2483,9 @@
                 </div>
             </div>
             <div class="card-deck featured-events-deck" style="padding: 70px; padding-top: 0px;">
-                <div class="card featured-event"
-                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);">
+                <div class="card featured-event pronites"
+                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);"
+                    onclick="openPronites(event,'DAY0')">
 
                     <div class="card-body" style=" padding-left: 0px; padding-right: 0px; ">
                         <h2 class="card-title featured-event-title" style=" color: rgba(204, 220, 242, 1); ">DAY</h2>
@@ -2480,8 +2496,9 @@
                     </div>
                 </div>
 
-                <div class="card featured-event"
-                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);">
+                <div class="card featured-event pronites"
+                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);"
+                    onclick="openPronites(event,'DAY1')">
 
                     <div class="card-body" style=" padding-left: 0px; padding-right: 0px; ">
                         <h2 class="card-title featured-event-title" style=" color: rgba(204, 220, 242, 1); ">DAY</h2>
@@ -2492,8 +2509,9 @@
                     </div>
                 </div>
 
-                <div class="card featured-event"
-                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);">
+                <div class="card featured-event pronites"
+                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);"
+                    onclick="openPronites(event,'DAY2')">
 
                     <div class="card-body" style=" padding-left: 0px; padding-right: 0px; ">
                         <h2 class="card-title featured-event-title" style=" color: rgba(204, 220, 242, 1); ">DAY</h2>
@@ -2504,8 +2522,9 @@
                     </div>
                 </div>
 
-                <div class="card featured-event"
-                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);">
+                <div class="card featured-event pronites"
+                    style="width:400px;height: 333px;box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.17);background-color: rgba(204, 220, 242, 0.04);"
+                    onclick="openPronites(event,'DAY3')">
 
                     <div class="card-body" style=" padding-left: 0px; padding-right: 0px; ">
                         <h2 class="card-title featured-event-title" style=" color: rgba(204, 220, 242, 1); ">DAY</h2>
@@ -2519,6 +2538,31 @@
 
                 <br><br><br><br><br>
             </div>
+
+            <div class="pronitesContent pronites-style" id="DAY0">
+                <p style="text-align: left; font-family: 'Lora';">
+                DEMO TEXT FOR DAY 0</p>
+            </div>
+
+
+            <div class="pronitesContent pronites-style" id="DAY1">
+                <p style="text-align: left; font-family: 'Lora';">
+                DEMO TEXT FOR DAY 1</p>
+            </div>
+
+
+            <div class="pronitesContent pronites-style" id="DAY2">
+                <p style="text-align: left; font-family: 'Lora';">
+                DEMO TEXT FOR DAY 2</p>
+            </div>
+
+
+            <div class="pronitesContent pronites-style" id="DAY3">
+                <p style="text-align: left; font-family: 'Lora';">
+                DEMO TEXT FOR DAY 3</p>
+            </div>
+
+
         </div>
     </div>
 
