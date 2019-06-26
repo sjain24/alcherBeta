@@ -25,6 +25,11 @@ body {
 
 img {
     vertical-align: baseline;
+    
+}
+
+.card-deck img{
+    padding: 10% 10% 0 10%;
 }
 
 /*--------------------------------------------------------------
@@ -649,7 +654,7 @@ a:hover, a:active {
 
 .intro{
     height: auto;
-    padding: 110px 0 150px;
+    padding: 250px 0 150px;
     background: url("bg-img/bg/Group\ 35.svg") no-repeat;
     background-size: 100% !important;
 }
@@ -2674,12 +2679,12 @@ align-items: center; }
     font-family:"Work Sans";
     font-weight:lighter;
     color:rgba(255,255,255);
-    font-size:18px;
+    font-size:15px;
 }
 
 
 .first-and-second {
-    background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
+    background: url('bg-img/Mariana Bo by Nishal@2x-min.png') no-repeat;
     background-size: 100%;
     min-height:1000px;
     width: 100%;
@@ -2688,7 +2693,7 @@ align-items: center; }
 }
 @media only screen and (max-width: 986px){
     .first-and-second {
-       background: url('bg-img/Mariana Bo by Nishal@2x.png') no-repeat;
+       background: url('bg-img/Mariana Bo by Nishal@2x-min.png') no-repeat;
         background-size: 100% 550px; 
       }
     
@@ -2696,7 +2701,7 @@ align-items: center; }
 
 @media only screen and (max-width: 430px){
     .first-and-second {
-       background: url('bg-img/mariana-bo-resize.png') no-repeat;
+       background: url('bg-img/mariana-bo-resize-min.png') no-repeat;
         background-size: 100% 450px;
         width: 100%; 
       }
@@ -3090,5 +3095,27 @@ align-items: center; }
     margin-top: 20px;
     margin-bottom: 20px;
 }*/
+
+.eventContent{
+    animation: fadeEffect 1.5s; /* Fading effect takes 1 second */ 
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.subModule{
+    animation: fadeEffect 1.5s; /* Fading effect takes 1 second */ 
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.cardcustom{
+    margin: 8px 30px 8px 30px;
+}
 
 /* style for information section ends here /*
