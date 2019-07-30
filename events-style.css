@@ -15,6 +15,7 @@ margin: 0px !important;
 padding: 0px !important;
 overflow-x: hidden;
 background-color: #70DEF1;
+scroll-behavior:smooth;
 
 }
 
